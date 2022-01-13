@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+.wrapper {
+    font-family: 'Lato', sans-serif;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    min-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {}
+
+.logo {}
+
+.logo__list {}
+
+.menu {}
+
+.menu__list {}
+
+.brand {}
+
+.brand__img {}
+
+.brand__text {}
+
+.brand__title {}
+
+.brand__subtitle {}
+
+.content {}
+
+.type {}
+
+.type__item {}
+
+.type__item-subtitle {}
+
+.type__item-title {}
+
+.fetured {}
+
+.fetured__title {}
+
+.title {}
+
+.fetured__subtitle {}
+
+.subtitle {}
+
+.fetured__item {}
+
+.fetured__item-img {}
+
+.fetured__item-title {}
+
+.fetured__item-subtitle {}
+
+.fetured__item-price {}
+
+.content__btn {}
+
+.feature {}
+
+.free {}
+
+.free__img {}
+
+.feature__title {}
+
+.feature__subtitle {}
+
+.subscribe {}
+
+.subscribe__manager {}
+
+.subscribe__form {}
+
+.subscribe__form-btn {}
+
+.footer {}
+
+.footer__down {}
+
+.rights {}
+
+.social__icons {}
+
+.facebook {}
+
+.instagram {}
+
+.pinterest {}
+
+.twitter {}
