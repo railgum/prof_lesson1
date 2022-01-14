@@ -14,25 +14,23 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container _container">
-                <div class="header__logo">
-                    <a class="header__logo-img">
-                        <img src="img/logo.png" alt="logo">
-                    </a>
-                    <button class="header__logo-search">
-								<img src="img/search.png" alt="">
-							</button>
-                </div>
+                <a class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="header__logo-search">
+									<img src="img/search.svg" alt="">
+								</button>
                 <div class="menu">
                     <nav>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="img/menu.svg" alt="img"></a>
+                                <a href="#" class="menu__link"><img src="#" alt="img"></a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="img/user.svg" alt="img"></a>
+                                <a href="#" class="menu__link"><img src="#" alt="img"></a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="img/basket.svg" alt="img"></a>
+                                <a href="#" class="menu__link"><img src="#" alt="img"></a>
                             </li>
                         </ul>
                     </nav>
@@ -41,11 +39,8 @@
         </header>
 
         <div class="brand">
-            <div class="brand__img">
-                <img src="img/header_img.png" alt="">
-            </div>
+            <div class="brand__img"></div>
             <div class="brand__text _container">
-                <img src="img/header_text_img.png" alt="">
                 <h1 class="brand__title">THE BRAND</h1>
                 <p class="brand__subtitle">OF LUXERIOUS FASHION</p>
             </div>
@@ -178,6 +173,43 @@
             </div>
         </footer>
     </div>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
 
 </html>
