@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     border: 0;
@@ -18,10 +17,6 @@ li {
     list-style: none;
 }
 
-img {
-    vertical-align: top;
-}
-
 h1,
 h2,
 h3,
@@ -36,40 +31,93 @@ html,
 body {
     height: 100%;
     line-height: 1;
+    font-family: 'Lato';
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+
+/*----------------------------------------------*/
+
 .wrapper {
-    font-family: 'Lato', sans-serif;
+    max-width: 1600px;
     min-height: 100%;
     overflow: hidden;
 }
 
-.container {
-    min-width: 1140px;
+
+/*----------------------------------------------*/
+
+._container {
+    max-width: 1140px;
     margin: 0 auto;
 }
 
-.header {}
 
-.logo {}
+/*----------------------------------------------*/
 
-.logo__list {}
+.header {
+    background: #222222;
+}
+
+.header__container {
+    display: flex;
+    max-height: 75px;
+    justify-content: space-between;
+}
+
+.header__logo {}
+
+.header__logo-img {}
+
+.header__logo-search {
+    margin: 28px 0 20px 41px;
+    color: #E8E8E8;
+    background: #222222;
+}
 
 .menu {}
 
-.menu__list {}
+.menu__list {
+    display: flex;
+    margin-top: 18px;
+}
 
-.brand {}
+.menu__item {
+    margin-left: 33px;
+}
 
-.brand__img {}
+.menu__item:first-child {
+    padding-top: 5px;
+}
 
-.brand__text {}
+.brand {
+    background: #F1E4E6;
+    display: flex;
+}
 
-.brand__title {}
+.brand__text {
+    margin-top: 290px;
+    margin-left: 91px;
+    float: right;
+}
 
-.brand__subtitle {}
+.brand__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.brand__subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
 
 .content {}
+
+.content__container {}
 
 .type {}
 
@@ -103,6 +151,8 @@ body {
 
 .feature {}
 
+.feature__container {}
+
 .free {}
 
 .free__img {}
@@ -113,6 +163,8 @@ body {
 
 .subscribe {}
 
+.subscribe__container {}
+
 .subscribe__manager {}
 
 .subscribe__form {}
@@ -121,7 +173,11 @@ body {
 
 .footer {}
 
+.footer__container {}
+
 .footer__down {}
+
+.container {}
 
 .rights {}
 
