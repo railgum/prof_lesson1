@@ -128,7 +128,8 @@ body {
 
 .type {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .type__item {
@@ -143,7 +144,7 @@ body {
 //    position: inherit;
 //}
 .type__item-label {
-    width: 100%;
+    //width: 100%;
     height: 100%;
     color: #fff;
     position: absolute;
