@@ -36,7 +36,7 @@ body {
   font-family: 'Lato';
 }
 
-.title {
+.fetured__title {
   font-weight: normal;
   font-size: 30px;
   line-height: 36px;
@@ -48,6 +48,27 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
+}
+
+.fetured__item-title {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.fetured__item-subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+.fetured__item-price {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
 }
 
 /*----------------------------------------------*/
@@ -176,4 +197,85 @@ body {
 
 .fetured {
   text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.fetured__title {
+  grid-column: 1/-1;
+}
+
+.fetured__subtitle {
+  grid-column: 1/-1;
+}
+
+.fetured__item {
+  background: #F8F8F8;
+}
+
+.fetured__item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  margin: 20px;
+}
+
+.fetured__item-subtitle {
+  margin: 12px 0 18px 0;
+}
+
+.fetured__btn {
+  width: 212px;
+  height: 48px;
+  border: 1px solid #ff6a6a;
+  margin: 48px auto 95px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.fetured__btn a {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+}
+
+.feature {
+  background: #222224;
+}
+
+.feature__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature__feature__item {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.feature__title {
+  font-weight: normal;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.feature__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
 }

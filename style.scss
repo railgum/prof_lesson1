@@ -49,6 +49,27 @@ body {
     color: #9F9F9F;
 }
 
+%title_fetured {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+%subtitle_fetured {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+%price_fetured {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
 
 /*----------------------------------------------*/
 
@@ -167,34 +188,78 @@ body {
 
 .fetured {
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     &__title {
         @extend %title;
+        grid-column: 1/-1;
     }
     &__subtitle {
         @extend %subtitle;
+        grid-column: 1/-1;
     }
-    &__item {}
+    &__item {
+        background: #F8F8F8;
+    }
     &__item-img {}
-    &__item-title {}
-    &__item-subtitle {}
-    &__item-price {}
+    &__item-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 20px;
+    }
+    &__item-title {
+        @extend %title_fetured;
+    }
+    &__item-subtitle {
+        @extend %subtitle_fetured;
+        margin: 12px 0 18px 0;
+    }
+    &__item-price {
+        @extend %price_fetured
+    }
+    &__btn {
+        width: 212px;
+        height: 48px;
+        border: 1px solid #ff6a6a;
+        margin: 48px auto 95px;
+        text-align: center;
+        padding-top: 15px;
+    }
+    &__btn a {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+    }
 }
 
-.subtitle {}
-
-.content__btn {}
-
-.feature {}
-
-.feature__container {}
-
-.free {}
-
-.free__img {}
-
-.feature__title {}
-
-.feature__subtitle {}
+.feature {
+    background: #222224;
+    &__container {
+        display: flex;
+    }
+    &__feature__item {
+        display: grid;
+        justify-items: center;
+    }
+    &__img {}
+    &__title {
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13.972px;
+        line-height: 17px;
+        text-align: center;
+        color: #FBFBFB;
+    }
+}
 
 .subscribe {}
 
