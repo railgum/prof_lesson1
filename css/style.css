@@ -2,21 +2,21 @@
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul,
 ol,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 h1,
@@ -25,163 +25,127 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
-    font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 html,
 body {
-    height: 100%;
-    line-height: 1;
-    font-family: 'Lato';
+  height: 100%;
+  line-height: 1;
+  font-family: 'Lato';
 }
 
-
 /*----------------------------------------------*/
-
 .wrapper {
-    max-width: 1600px;
-    min-height: 100%;
-    overflow: hidden;
+  max-width: 1600px;
+  min-height: 100%;
+  overflow: hidden;
 }
 
-
 /*----------------------------------------------*/
-
 ._container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-
 /*----------------------------------------------*/
-
 .header {
-    background: #222222;
+  background: #222222;
 }
 
 .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-height: 75px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 75px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__logo-search {
-    margin: 28px 0 20px 41px;
-    color: #E8E8E8;
-    background: #222222;
+  margin: 28px 0 20px 41px;
+  color: #E8E8E8;
+  background: #222222;
 }
 
 .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 18px;
 }
 
 .menu__item {
-    margin-left: 33px;
+  margin-left: 33px;
 }
 
 .menu__item:first-child {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 .brand {
-    background: #F1E4E6;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  background: #F1E4E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .brand__text {
-    height: 93px;
-    margin-top: 290px;
-    margin-left: 91px;
-    padding-left: 15px;
-    border-left: 12px solid #F16D7F;
+  height: 92px;
+  margin-top: 290px;
+  margin-left: 91px;
+  float: right;
+  border-left: 12px solid #F16D7F;
+  padding-left: 16px;
 }
 
 .brand__title {
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 58px;
-    color: #222222;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
 }
 
 .brand__subtitle {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 28px;
-    color: #222222;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 28px;
+  color: #222222;
 }
-
-.brand__subtitle span {
-    color: #F16D7F;
-}
-
-.content {}
-
-.content__container {}
-
-._container {}
 
 .type {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 65px 16px;
+  display: -ms-grid;
+  display: grid;
 }
 
 .type__item {
-    position: relative;
-}
-
-.type__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-.type__item-label {
-    position: relative;
-    z-index: 1;
+  position: relative;
 }
 
 .type__item-last {
-    grid-column: 1/-1;
-    position: relative;
+  position: relative;
 }
 
-.type__item:last-child img {}
+.type__item-label {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 26.36%;
+  left: 20.81%;
+}
 
-.type__item-subtitle {}
+.type__item-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
 
-.type__item-title {}
-
-.fetured {}
-
-.fetured__title {}
-
-.title {}
-
-.fetured__subtitle {}
-
-.subtitle {}
-
-.fetured__item {}
-
-.fetured__item-img {}
-
-.fetured__item-title {}
-
-.fetured__item-subtitle {}
-
-.fetured__item-price {}
-
-.content__btn {}
+.type__item-title {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28.8px;
+}
