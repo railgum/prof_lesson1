@@ -36,6 +36,20 @@ body {
   font-family: 'Lato';
 }
 
+.title {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.fetured__subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
+
 /*----------------------------------------------*/
 .wrapper {
   max-width: 1600px;
@@ -158,4 +172,8 @@ body {
   font-size: 24px;
   line-height: 28.8px;
   color: #F16D7F;
+}
+
+.fetured {
+  text-align: center;
 }

@@ -35,6 +35,20 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+%title {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+%subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
 
 /*----------------------------------------------*/
 
@@ -57,12 +71,12 @@ body {
 
 .header {
     background: #222222;
-    .&__container {
+    &__container {
         display: flex;
         max-height: 75px;
         justify-content: space-between;
     }
-    .&__logo-search {
+    &__logo-search {
         margin: 28px 0 20px 41px;
         color: #E8E8E8;
         background: #222222;
@@ -70,14 +84,14 @@ body {
 }
 
 .menu {
-    .&__list {
+    &__list {
         display: flex;
         margin-top: 18px;
     }
-    .&__item {
+    &__item {
         margin-left: 33px;
     }
-    .&__item:first-child {
+    &__item:first-child {
         padding-top: 5px;
     }
 }
@@ -85,7 +99,7 @@ body {
 .brand {
     background: #F1E4E6;
     display: flex;
-    .&__text {
+    &__text {
         height: 92px;
         margin-top: 290px;
         margin-left: 91px;
@@ -93,16 +107,16 @@ body {
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
     }
-    .&__text span {
+    &__text span {
         color: #F16D7F;
     }
-    .&__title {
+    &__title {
         font-weight: 900;
         font-size: 48px;
         line-height: 58px;
         color: #222222;
     }
-    .&__subtitle {
+    &__subtitle {
         font-weight: 700;
         font-size: 32px;
         line-height: 28px;
@@ -119,16 +133,16 @@ body {
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     margin: 65px 0 96px 0;
-    .&__item {
+    &__item {
         position: relative;
     }
-    .&__item-last {
+    &__item-last {
         position: relative;
     }
     //.&__item img {
     //    position: inherit;
     //}
-    .&__item-label {
+    &__item-label {
         width: 100%;
         height: 100%;
         color: #fff;
@@ -138,12 +152,12 @@ body {
         left: 0;
         text-align: center;
     }
-    .&__item-subtitle {
+    &__item-subtitle {
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
     }
-    .&__item-title {
+    &__item-title {
         font-weight: normal;
         font-size: 24px;
         line-height: 28.8px;
@@ -153,25 +167,20 @@ body {
 
 .fetured {
     text-align: center;
+    &__title {
+        @extend %title;
+    }
+    &__subtitle {
+        @extend %subtitle;
+    }
+    &__item {}
+    &__item-img {}
+    &__item-title {}
+    &__item-subtitle {}
+    &__item-price {}
 }
 
-.fetured__title {}
-
-.title {}
-
-.fetured__subtitle {}
-
 .subtitle {}
-
-.fetured__item {}
-
-.fetured__item-img {}
-
-.fetured__item-title {}
-
-.fetured__item-subtitle {}
-
-.fetured__item-price {}
 
 .content__btn {}
 
