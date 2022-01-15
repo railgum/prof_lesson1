@@ -125,6 +125,7 @@ body {
   gap: 30px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  margin: 65px 0 96px 0;
 }
 
 .type__item {
@@ -136,12 +137,14 @@ body {
 }
 
 .type__item-label {
+  width: 100%;
   height: 100%;
   color: #fff;
   position: absolute;
   z-index: 1;
-  top: 26.36%;
-  left: 20.81%;
+  top: 42%;
+  left: 0;
+  text-align: center;
 }
 
 .type__item-subtitle {
@@ -154,4 +157,5 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 28.8px;
+  color: #F16D7F;
 }
