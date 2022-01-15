@@ -124,7 +124,6 @@ body {
         height: 92px;
         margin-top: 290px;
         margin-left: 91px;
-        float: right;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
     }
@@ -240,9 +239,11 @@ body {
     &__container {
         display: flex;
     }
-    &__feature__item {
+    &__item {
         display: grid;
         justify-items: center;
+        margin: 103px 0 104px 0;
+        padding: 0 28px;
     }
     &__img {}
     &__title {
@@ -250,26 +251,34 @@ body {
         font-size: 19.96px;
         line-height: 24px;
         color: #FBFBFB;
+        margin: 28px 0 16px 0;
     }
     &__subtitle {
         font-style: normal;
         font-weight: 300;
         font-size: 13.972px;
-        line-height: 17px;
+        line-height: 20px;
         text-align: center;
         color: #FBFBFB;
     }
 }
 
-.subscribe {}
-
-.subscribe__container {}
-
-.subscribe__manager {}
-
-.subscribe__form {}
-
-.subscribe__form-btn {}
+.subscribe {
+    min-height: 448px;
+    background-image: url(/img/phot_subscribe.png);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__manager {
+        max-width: 360px;
+        height: 225px;
+        margin-top: 97px;
+    }
+    &__form {}
+    &__form-btn {}
+}
 
 .footer {}
 
