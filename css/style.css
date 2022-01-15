@@ -101,6 +101,10 @@ body {
   padding-left: 16px;
 }
 
+.brand__text span {
+  color: #F16D7F;
+}
+
 .brand__title {
   font-weight: 900;
   font-size: 48px;
@@ -118,6 +122,8 @@ body {
 .type {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: repeat 3, 1fr;
+      grid-template-columns: repeat 3, 1fr;
 }
 
 .type__item {
