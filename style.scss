@@ -96,9 +96,12 @@ body {
 }
 
 .brand__text {
+    height: 92px;
     margin-top: 290px;
     margin-left: 91px;
     float: right;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
 }
 
 .brand__title {
@@ -111,7 +114,7 @@ body {
 .brand__subtitle {
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 28px;
     color: #222222;
 }
 
@@ -119,13 +122,47 @@ body {
 
 .content__container {}
 
-.type {}
+.type {
+    display: grid;
+}
 
-.type__item {}
+.type__item {
+    position: relative;
+}
 
-.type__item-subtitle {}
+.type__item-last {
+    position: relative;
+}
 
-.type__item-title {}
+//.type__item img {
+//    position: inherit;
+//}
+.type__item-label {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 26.36%;
+    left: 20.81%;
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
+}
+
+.type__item-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    //text-align: center;
+}
+
+.type__item-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28.8px;
+    //text-align: center;
+}
 
 .fetured {}
 
