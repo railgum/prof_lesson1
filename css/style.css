@@ -303,4 +303,102 @@ body {
   max-width: 360px;
   height: 225px;
   margin-top: 97px;
+  text-align: center;
+}
+
+.subscribe__manager img {
+  margin-bottom: 30px;
+}
+
+.subscribe__manager p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe__form {
+  max-width: 557px;
+  height: 142px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.subscribe__form-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  color: #222224;
+}
+
+.subscribe__form-subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 0px;
+  color: #222224;
+  margin-bottom: 32px;
+  margin-top: 10px;
+}
+
+.subscribe__form-btn {
+  max-width: 360px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe .subscribe__btn-grey {
+  background-image: url(/img/btngrey.png);
+}
+
+.subscribe .subscribe__btn-grey input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.subscribe .subscribe__btn-grey input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.subscribe .subscribe__btn-grey input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.subscribe .subscribe__btn-grey input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #222224;
+  opacity: 0.67;
 }

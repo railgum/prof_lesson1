@@ -144,10 +144,6 @@ body {
     }
 }
 
-.content {}
-
-.content__container {}
-
 .type {
     display: grid;
     gap: 30px;
@@ -201,7 +197,6 @@ body {
     &__item {
         background: #F8F8F8;
     }
-    &__item-img {}
     &__item-text {
         display: flex;
         flex-direction: column;
@@ -245,7 +240,6 @@ body {
         margin: 103px 0 104px 0;
         padding: 0 28px;
     }
-    &__img {}
     &__title {
         font-weight: normal;
         font-size: 19.96px;
@@ -275,9 +269,56 @@ body {
         max-width: 360px;
         height: 225px;
         margin-top: 97px;
+        text-align: center;
     }
-    &__form {}
-    &__form-btn {}
+    &__manager img {
+        margin-bottom: 30px;
+    }
+    &__manager p {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #222224;
+    }
+    &__form {
+        max-width: 557px;
+        height: 142px;
+        margin-top: 150px;
+        text-align: center;
+    }
+    &__form-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        color: #222224;
+    }
+    &__form-subtitle {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 0px;
+        color: #222224;
+        margin-bottom: 32px;
+        margin-top: 10px;
+    }
+    &__form-btn {
+        max-width: 360px;
+        height: 49px;
+        display: flex;
+    }
+    .subscribe__btn-grey {
+        background-image: url(/img/btngrey.png);
+    }
+    .subscribe__btn-grey input::placeholder {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #222224;
+        opacity: 0.67;
+    }
+    .subscribe__btn-red {}
 }
 
 .footer {}
