@@ -341,85 +341,29 @@ body {
   margin-top: 10px;
 }
 
-.subscribe__form-btn {
-  max-width: 360px;
+.subscribe__form-btn input {
   height: 49px;
-}
-
-.subscribe__btn-grey {
-  width: 100%;
-  background: url(/img/btngrey.png) no-repeat;
-}
-
-.subscribe__btn-grey input::-webkit-input-placeholder {
+  width: 256px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  padding-left: 20px;
+  background-color: #E1E1E1;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #222224;
-  background-color: #e1e1e1;
-  opacity: 0.67;
 }
 
-.subscribe__btn-grey input:-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #222224;
-  background-color: #e1e1e1;
-  opacity: 0.67;
-}
-
-.subscribe__btn-grey input::-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #222224;
-  background-color: #e1e1e1;
-  opacity: 0.67;
-}
-
-.subscribe__btn-grey input::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: #222224;
-  background-color: #e1e1e1;
-  opacity: 0.67;
-}
-
-.subscribe__btn-red {
-  width: 100%;
-  background-image: url(/img/btnred.png) no-repeat;
-}
-
-.subscribe__btn-red input::-webkit-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
+.subscribe__form-btn button {
+  height: 49px;
+  width: 100px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: #F16D7F;
   color: #FFFFFF;
-}
-
-.subscribe__btn-red input:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.subscribe__btn-red input::-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-.subscribe__btn-red input::placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #FFFFFF;
 }
