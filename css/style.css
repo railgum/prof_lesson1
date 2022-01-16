@@ -344,61 +344,82 @@ body {
 .subscribe__form-btn {
   max-width: 360px;
   height: 49px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
-.subscribe .subscribe__btn-grey {
-  background-image: url(/img/btngrey.png);
+.subscribe__btn-grey {
+  width: 100%;
+  background: url(/img/btngrey.png) no-repeat;
 }
 
-.subscribe .subscribe__btn-grey input::-webkit-input-placeholder {
+.subscribe__btn-grey input::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
   color: #222224;
+  background-color: #e1e1e1;
   opacity: 0.67;
 }
 
-.subscribe .subscribe__btn-grey input:-ms-input-placeholder {
+.subscribe__btn-grey input:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   color: #222224;
+  background-color: #e1e1e1;
   opacity: 0.67;
 }
 
-.subscribe .subscribe__btn-grey input::-ms-input-placeholder {
+.subscribe__btn-grey input::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   color: #222224;
+  background-color: #e1e1e1;
   opacity: 0.67;
 }
 
-.subscribe .subscribe__btn-grey input::placeholder {
+.subscribe__btn-grey input::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #222224;
+  background-color: #e1e1e1;
   opacity: 0.67;
+}
+
+.subscribe__btn-red {
+  width: 100%;
+  background-image: url(/img/btnred.png) no-repeat;
+}
+
+.subscribe__btn-red input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe__btn-red input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe__btn-red input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe__btn-red input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
 }
