@@ -332,22 +332,37 @@ body {
 
 .footer {
     background: #222224;
+    padding: 24px 0;
 }
 
-.footer__container {}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
 
-.footer__down {}
+.rights {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    padding-top: 6px;
+}
 
-.container {}
+.social__icons {
+    display: flex;
+}
 
-.rights {}
+.social__icons-item {
+    width: 32px;
+    height: 32px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
 
-.social__icons {}
-
-.facebook {}
-
-.instagram {}
-
-.pinterest {}
-
-.twitter {}
+.social__icons-item a {
+    color: #000;
+    text-decoration: none;
+}
