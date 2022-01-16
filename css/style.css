@@ -71,7 +71,8 @@ body {
   color: #F16D7F;
 }
 
-/*----------------------------------------------*/
+/*media------------------------*/
+/*---------------------------------------*/
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -81,6 +82,12 @@ body {
 ._container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  ._container {
+    max-width: 736px;
+  }
 }
 
 /*----------------------------------------------*/
@@ -123,11 +130,17 @@ body {
   position: relative;
 }
 
+/*---------------------------------------------*/
 .brand__inside {
+  min-height: inherit;
   background: #F1E4E6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.brand__inside-img {
+  display: block;
 }
 
 .brand__inside-text {
@@ -154,6 +167,14 @@ body {
   font-size: 32px;
   line-height: 28px;
   color: #222222;
+}
+
+.brand__inside > div {
+  width: 50%;
+}
+
+.brand__inside img {
+  width: 100%;
 }
 
 ._padblock {
@@ -219,6 +240,7 @@ body {
   color: #F16D7F;
 }
 
+/*-------------------------------------------------*/
 .fetured {
   text-align: center;
   display: -ms-grid;
@@ -272,6 +294,7 @@ body {
   color: #F26376;
 }
 
+/*---------------------------------------------*/
 .feature {
   background: #222224;
 }
@@ -307,6 +330,7 @@ body {
   color: #FBFBFB;
 }
 
+/*---------------------------------------------------*/
 .subscribe__container {
   min-height: 448px;
   background: url(/img/phot_subscribe.png) no-repeat;
@@ -389,6 +413,7 @@ body {
   line-height: 17px;
 }
 
+/*-----------------------------------------------------*/
 .footer {
   background: #222224 no-repeat;
   padding: 24px 0;
