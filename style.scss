@@ -74,7 +74,6 @@ body {
 /*----------------------------------------------*/
 
 .wrapper {
-    max-width: 1600px;
     min-height: 100%;
     overflow: hidden;
 }
@@ -118,25 +117,29 @@ body {
 }
 
 .brand {
+    position: relative;
+}
+
+.brand__inside {
     background: #F1E4E6;
     display: flex;
-    &__text {
+    &-text {
         height: 92px;
         margin-top: 290px;
         margin-left: 91px;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
     }
-    &__text span {
+    &-text span {
         color: #F16D7F;
     }
-    &__title {
+    &-title {
         font-weight: 900;
         font-size: 48px;
         line-height: 58px;
         color: #222222;
     }
-    &__subtitle {
+    &-subtitle {
         font-weight: 700;
         font-size: 32px;
         line-height: 28px;
@@ -144,34 +147,42 @@ body {
     }
 }
 
+._padblock {
+    display: none;
+}
+
 .type {
     display: grid;
-    gap: 30px;
     grid-template-columns: repeat(3, 1fr);
-    margin: 65px 0 96px 0;
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+    padding: 65px 0 96px 0;
     &__item {
         position: relative;
     }
     &__item-last {
+        grid-column: 1/-1;
         position: relative;
     }
-    //.&__item img {
-    //    position: inherit;
-    //}
+    & img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
     &__item-label {
         width: 100%;
         height: 100%;
-        color: #fff;
-        position: absolute;
-        z-index: 1;
-        top: 42%;
-        left: 0;
-        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &__item-subtitle {
         font-weight: normal;
         font-size: 16px;
         line-height: 19px;
+        color: #FFF;
     }
     &__item-title {
         font-weight: normal;
@@ -258,11 +269,11 @@ body {
 }
 
 .subscribe {
-    min-height: 448px;
-    background-image: url(/img/phot_subscribe.png);
     &__container {
+        min-height: 448px;
+        background: url(/img/phot_subscribe.png) no-repeat;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     &__manager {
@@ -330,7 +341,7 @@ body {
 }
 
 .footer {
-    background: #222224;
+    background: #222224 no-repeat;
     padding: 24px 0;
 }
 
