@@ -73,7 +73,7 @@ body {
 
 /*media------------------------*/
 
-$small: 320px;
+$small: 640px;
 $tablet: 768px;
 @mixin respond-to ($media) {
     @if $media==handhelds {
@@ -103,7 +103,7 @@ $tablet: 768px;
     max-width: 1140px;
     margin: 0 auto;
     @include respond-to(tablet) {
-        max-width: 736px;
+        max-width: 768px;
     }
 }
 
@@ -122,12 +122,20 @@ $tablet: 768px;
         color: #E8E8E8;
         background: #222222;
     }
+    &__logo-img {
+        @include respond-to(tablet) {
+            margin-left: 32px;
+        }
+    }
 }
 
 .menu {
     &__list {
         display: flex;
         margin-top: 18px;
+        @include respond-to(tablet) {
+            margin-right: 32px;
+        }
     }
     &__item {
         margin-left: 33px;
@@ -137,24 +145,27 @@ $tablet: 768px;
     }
 }
 
+
+/*---------------------------------------------*/
+
 .brand {
     position: relative;
 }
-
-
-/*---------------------------------------------*/
 
 .brand__inside {
     min-height: inherit;
     background: #F1E4E6;
     display: flex;
-    &-img {
+    &-left {
         display: block;
     }
+    //&-right {
+    //    display: flex;
+    //    justify-content: center;
+    //    align-items: center;
+    //}
     &-text {
         height: 92px;
-        margin-top: 290px;
-        margin-left: 91px;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
     }
@@ -178,7 +189,14 @@ $tablet: 768px;
     }
     & img {
         width: 100%;
+        height: 100%;
     }
+}
+
+.brand_inside-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ._padblock {
@@ -191,6 +209,9 @@ $tablet: 768px;
     grid-template-rows: 260px 180px;
     gap: 30px;
     padding: 65px 0 96px 0;
+    @include respond-to(tablet) {
+        padding: 20px 0 155px 0;
+    }
     &__item {
         position: relative;
     }
@@ -202,6 +223,7 @@ $tablet: 768px;
         width: 100%;
         height: 100%;
         position: absolute;
+        object-fit: cover;
     }
     &__item-label {
         width: 100%;
@@ -231,19 +253,29 @@ $tablet: 768px;
 
 .fetured {
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
     &__title {
         @extend %title;
-        grid-column: 1/-1;
     }
     &__subtitle {
         @extend %subtitle;
-        grid-column: 1/-1;
+        margin-bottom: 48px;
+        @include respond-to(tablet) {
+            margin-bottom: 72px;
+        }
     }
     &__item {
+        display: grid;
         background: #F8F8F8;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        @include respond-to(tablet) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 16px;
+        }
+        @media (max-width: 1130px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__item-text {
         display: flex;
@@ -259,7 +291,7 @@ $tablet: 768px;
         margin: 12px 0 18px 0;
     }
     &__item-price {
-        @extend %price_fetured
+        @extend %price_fetured;
     }
     &__btn {
         width: 212px;
@@ -268,6 +300,9 @@ $tablet: 768px;
         margin: 48px auto 95px;
         text-align: center;
         padding-top: 15px;
+        @include respond-to(tablet) {
+            margin: 32px auto 64px;
+        }
     }
     &__btn a {
         font-weight: normal;
@@ -284,12 +319,30 @@ $tablet: 768px;
     background: #222224;
     &__container {
         display: flex;
+        @include respond-to(tablet) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__item {
         display: grid;
         justify-items: center;
         margin: 103px 0 104px 0;
         padding: 0 28px;
+        @include respond-to(tablet) {
+            width: 360px;
+            margin: 23px 0;
+        }
+    }
+    &__item:first-child {
+        @include respond-to(tablet) {
+            margin-top: 46px;
+        }
+    }
+    &__item:last-child {
+        @include respond-to(tablet) {
+            margin-bottom: 46px;
+        }
     }
     &__title {
         font-weight: normal;
@@ -297,6 +350,9 @@ $tablet: 768px;
         line-height: 24px;
         color: #FBFBFB;
         margin: 28px 0 16px 0;
+        @include respond-to(tablet) {
+            margin: 28px 0 16px 0;
+        }
     }
     &__subtitle {
         font-style: normal;
@@ -318,12 +374,19 @@ $tablet: 768px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @include respond-to(tablet) {
+            flex-direction: column;
+            background-size: cover;
+        }
     }
     &__manager {
         max-width: 360px;
         height: 225px;
         margin-top: 97px;
         text-align: center;
+        @include respond-to(tablet) {
+            margin-top: 64px;
+        }
     }
     &__manager img {
         margin-bottom: 30px;
@@ -340,6 +403,9 @@ $tablet: 768px;
         height: 142px;
         margin-top: 150px;
         text-align: center;
+        @include respond-to(tablet) {
+            margin: 48px 0 140px 0;
+        }
     }
     &__form-title {
         font-weight: bold;
@@ -402,10 +468,16 @@ $tablet: 768px;
     line-height: 19px;
     color: #FBFBFB;
     padding-top: 6px;
+    @include respond-to(tablet) {
+        margin-left: 32px;
+    }
 }
 
 .social__icons {
     display: flex;
+    @include respond-to(tablet) {
+        margin-right: 32px;
+    }
 }
 
 .social__icons-item {
