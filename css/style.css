@@ -209,6 +209,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .brand__inside-text {
+    height: 60px;
+  }
+}
+
 .brand__inside-text span {
   color: #F16D7F;
 }
@@ -239,6 +245,13 @@ body {
   font-size: 32px;
   line-height: 28px;
   color: #222222;
+}
+
+@media only screen and (max-width: 768px) {
+  .brand__inside-subtitle {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 @media only screen and (max-width: 375px) {

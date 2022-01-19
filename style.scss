@@ -178,6 +178,9 @@
 	        @include respond-to(arm) {
 	            height: 61px;
 	        }
+	        @include respond-to(tablet) {
+	            height: 60px;
+	        }
 	    }
 	    &-text span {
 	        color: #F16D7F;
@@ -201,6 +204,10 @@
 	        font-size: 32px;
 	        line-height: 28px;
 	        color: #222222;
+	        @include respond-to(tablet) {
+	            font-size: 24px;
+	            line-height: 28px;
+	        }
 	        @include respond-to(arm) {
 	            font-size: 20px;
 	            line-height: 32px;
