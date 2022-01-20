@@ -189,29 +189,40 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+  .brand__inside-right {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .brand__inside-text {
   height: 92px;
   border-left: 12px solid #F16D7F;
   padding-left: 16px;
+  margin-left: 64px;
 }
 
 @media only screen and (max-width: 375px) {
   .brand__inside-text {
     height: 61px;
+    margin: 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .brand__inside-text {
     height: 60px;
+    margin: 0;
   }
 }
 
@@ -776,4 +787,61 @@ body {
 .social__icons-item a {
   color: #000;
   text-decoration: none;
+}
+
+.new {
+  background: #F8F3F4;
+}
+
+.new .new__inside {
+  min-height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new .new__inside-left {
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+
+.new .new__inside-right {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.new .new__inside-right .new__breadcrumb {
+  list-style: none;
+}
+
+.new .new__inside-right .new__breadcrumb li {
+  display: inline;
+}
+
+.new .new__inside-right .new__breadcrumb li + li:before {
+  padding: 3px;
+  color: #636363;
+  content: "/\00a0";
+}
+
+.new .new__inside-right .new__breadcrumb li a {
+  text-decoration: none;
+  color: #636363;
+}
+
+.new .new__inside-right .new__breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.new .new__inside-right .new__breadcrumb li:last-child {
+  color: #F16D7F;
 }

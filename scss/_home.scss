@@ -103,18 +103,24 @@ $tablet: 768px;
     }
     &-right {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        @include respond-to(arm) {
+            justify-content: center;
+        }
     }
     &-text {
         height: 92px;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
+        margin-left: 64px;
         @include respond-to(arm) {
             height: 61px;
+            margin: 0;
         }
         @include respond-to(tablet) {
             height: 60px;
+            margin: 0;
         }
         span {
             color: #F16D7F;
