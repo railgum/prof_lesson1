@@ -379,6 +379,12 @@ $tablet: 768px;
         line-height: 19px;
         color: #F26376;
     }
+    &__btn:hover {
+        background: #F16D7F;
+        a {
+            color: #FFFFFF;
+        }
+    }
 }
 
 

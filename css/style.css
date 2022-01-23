@@ -579,6 +579,14 @@ body {
   color: #F26376;
 }
 
+.fetured__btn:hover {
+  background: #F16D7F;
+}
+
+.fetured__btn:hover a {
+  color: #FFFFFF;
+}
+
 /*---------------------------------------------*/
 .feature {
   background: #222224;
