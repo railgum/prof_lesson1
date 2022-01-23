@@ -919,6 +919,7 @@ body {
 
 .new .new__inside-right .new__breadcrumb li:last-child {
   color: #F16D7F;
+  text-transform: uppercase;
 }
 
 .filter {
@@ -936,7 +937,7 @@ body {
 
 .filter__left img {
   position: relative;
-  top: 2px;
+  top: 0;
   left: 11px;
 }
 

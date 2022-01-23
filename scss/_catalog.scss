@@ -70,6 +70,7 @@ $tabletLS: 1130px;
             }
             li:last-child {
                 color: #F16D7F;
+                text-transform: uppercase;
             }
         }
     }
@@ -82,7 +83,7 @@ $tabletLS: 1130px;
         display: flex;
         img {
             position: relative;
-            top: 2px;
+            top: 0;
             left: 11px;
         }
     }
