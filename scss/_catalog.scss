@@ -80,11 +80,17 @@ $tabletLS: 1130px;
     margin: 51px auto 64px;
     display: flex;
     &__left {
+        position: relative;
         display: flex;
         img {
             position: relative;
             top: 0;
             left: 11px;
+            width: 15px;
+            height: 15px;
+        }
+        a:hover {
+            color: #EF5B70;
         }
     }
     &__title {
@@ -92,8 +98,20 @@ $tabletLS: 1130px;
         margin-left: 16px;
         color: #000000;
     }
-    &__category {}
-    &__category-item {}
+    &__category {
+        position: absolute;
+        width: 360px;
+        min-height: 530px;
+        padding: 24px 33px;
+        background: #ffffff;
+        //box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+    }
+    &__category-item {
+        margin: 24px 0;
+        a {
+            display: flex;
+        }
+    }
     &__category-title {}
     &__right {
         margin-left: 304px;

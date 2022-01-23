@@ -614,7 +614,7 @@ body {
 /*---------------------------------------------------*/
 .subscribe__container {
   min-height: 448px;
-  background: url(/img/phot_subscribe.png) no-repeat;
+  background: url(img/phot_subscribe.png) no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,6 +930,7 @@ body {
 }
 
 .filter__left {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,11 +940,35 @@ body {
   position: relative;
   top: 0;
   left: 11px;
+  width: 15px;
+  height: 15px;
+}
+
+.filter__left a:hover {
+  color: #EF5B70;
 }
 
 .filter__title {
   margin-left: 16px;
   color: #000000;
+}
+
+.filter__category {
+  position: absolute;
+  width: 360px;
+  min-height: 530px;
+  padding: 24px 33px;
+  background: #ffffff;
+}
+
+.filter__category-item {
+  margin: 24px 0;
+}
+
+.filter__category-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filter__right {
