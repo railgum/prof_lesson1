@@ -9,6 +9,7 @@
 
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
         <aside class="filter _container">
             <div class="filter__left">
                 <p class="filter__title">FILTER</p>
-                <img src="../img/filter.svg" alt="">
+                <img class="filter__icon" src="../img/filter.svg" alt="">
                 <div class="filter__category _padblock">
                     <nav class="filter__category-item">
                         <div class="filter__category-title">CATEGORY</div>
@@ -112,11 +113,19 @@
                     <div class="filter__trending-title">TRENDING NOW
                         <img src="../img/filterRight.svg" alt="">
                     </div>
-                    <div class="filter__trending-item _padblock">
-                        <input type="checkbox"> Hoodies Under Blazers
-                        <input type="checkbox"> Color Clashing
-                        <input type="checkbox"> Academia
-                        <input type="checkbox"> Y2K Fashion
+                    <div class="filter__trending-item _padblock item__style">
+                        <div>
+                            <input type="checkbox"> Hoodies
+                        </div>
+                        <div>
+                            <input type="checkbox"> Clashing
+                        </div>
+                        <div>
+                            <input type="checkbox"> Academia
+                        </div>
+                        <div>
+                            <input type="checkbox"> Y2K Fashion
+                        </div>
                     </div>
                 </div>
                 <div class="filter__size">
@@ -124,11 +133,11 @@
                         SIZE
                         <img src="../img/filterRight.svg" alt="">
                     </div>
-                    <div class="filter__size-item _padblock">
-                        <input type="checkbox"> XS
-                        <input type="checkbox"> S
-                        <input type="checkbox"> M
-                        <input type="checkbox"> L
+                    <div class="filter__size-item _padblock item__style">
+                        <div><input type="checkbox"> XS</div>
+                        <div><input type="checkbox"> S</div>
+                        <div><input type="checkbox"> M</div>
+                        <div><input type="checkbox"> L</div>
                     </div>
                 </div>
                 <div class="filter__price">
@@ -136,11 +145,11 @@
                         PRICE
                         <img src="../img/filterRight.svg" alt="">
                     </div>
-                    <div class="filter__price-item _padblock">
-                        <input type="checkbox"> 200 - 500
-                        <input type="checkbox"> 501 - 1500
-                        <input type="checkbox"> 1501 - 5000
-                        <input type="checkbox"> > 5000
+                    <div class="filter__price-item _padblock item__style">
+                        <div> <input type="checkbox"> 200 - 500</div>
+                        <div><input type="checkbox"> 501 - 1500</div>
+                        <div><input type="checkbox"> 1501 - 5000</div>
+                        <div><input type="checkbox"> > 5000</div>
                     </div>
                 </div>
             </div>

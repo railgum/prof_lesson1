@@ -84,19 +84,24 @@ $tabletLS: 1130px;
         display: flex;
         img {
             position: relative;
+            z-index: 10;
             top: 0;
             left: 11px;
             width: 15px;
             height: 15px;
         }
-        a:hover {
-            color: #EF5B70;
-        }
+    }
+    &__left:hover {
+        color: #EF5B70 !important;
     }
     &__title {
         @extend %subtitle;
         margin-left: 16px;
         color: #000000;
+        z-index: 10;
+    }
+    &__title-red {
+        color: #F16D7F;
     }
     &__category {
         position: absolute;
@@ -104,15 +109,31 @@ $tabletLS: 1130px;
         min-height: 530px;
         padding: 24px 33px;
         background: #ffffff;
-        //box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.2);
+        a {
+            padding-left: 22px;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
     }
     &__category-item {
         margin: 24px 0;
         a {
             display: flex;
+            margin-bottom: 11px;
         }
     }
-    &__category-title {}
+    &__category-title {
+        height: 37px;
+        border-left: 5px solid #F16D7F;
+        padding-left: 11px;
+        border-bottom: 1px solid #ebebeb;
+        margin-bottom: 24px;
+        padding-top: 10px;
+    }
     &__right {
         margin-left: 304px;
         display: flex;
@@ -124,17 +145,38 @@ $tabletLS: 1130px;
             left: 4px;
         }
     }
-    &__trending {}
+    &__trending {
+        position: relative;
+    }
     &__trending-title {}
     &__trending-item {}
     &__size {
         margin: 0 27px;
+        position: relative;
     }
     &__size-title {}
     &__size-item {}
-    &__price {}
+    &__price {
+        position: relative;
+    }
     &__price-title {}
     &__price-item {}
+    .item__style {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        width: 120px;
+        height: 105px;
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.2);
+        padding: 7px 9px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #6f6e6e;
+    }
+    div {
+        margin-top: 5px;
+    }
 }
 
 .numbering {
