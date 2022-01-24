@@ -1132,3 +1132,55 @@ body {
 .numbering .fa {
   color: #000000;
 }
+
+.slide {
+  background: #F7F7F7;
+  height: 777px;
+  position: relative;
+}
+
+.slide__button-left {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 0;
+  top: 365px;
+  z-index: 1;
+  background: url(../img/Slide/slide-left.svg) center no-repeat rgba(42, 42, 42, 0.15);
+}
+
+.slide__button-left:hover {
+  background: url(../img/Slide/slide-left-hover.svg) center no-repeat rgba(42, 42, 42, 0.15);
+}
+
+.slide__img img {
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide__button-right {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  top: 365px;
+  right: 0;
+  z-index: 1;
+  background: url(../img/Slide/slide-right.svg) center no-repeat rgba(42, 42, 42, 0.15);
+}
+
+.slide__button-right:hover {
+  background: url(../img/Slide/slide-right-hover.svg) center no-repeat rgba(42, 42, 42, 0.15);
+}
+
+.product__cart {
+  position: relative;
+}
+
+.product__cart-wrap {
+  height: 600px;
+  background: #ffffff;
+  border: 1px solid #EAEAEA;
+  margin: -64px auto 128px;
+}
