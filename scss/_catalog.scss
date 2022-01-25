@@ -81,15 +81,16 @@ $tabletLS: 1130px;
     display: flex;
     &__left {
         position: relative;
+        z-index: 10;
         display: flex;
-        img {
-            position: relative;
-            z-index: 10;
-            top: 0;
-            left: 11px;
-            width: 15px;
-            height: 15px;
-        }
+        //img {
+        //    position: relative;
+        //    z-index: 10;
+        //    top: 0;
+        //    left: 11px;
+        //    width: 15px;
+        //    height: 15px;
+        //}
     }
     &__left:hover {
         color: #EF5B70 !important;
@@ -98,10 +99,25 @@ $tabletLS: 1130px;
         @extend %subtitle;
         margin-left: 16px;
         color: #000000;
+        position: relative;
         z-index: 10;
     }
     &__title-red {
         color: #F16D7F;
+        left: 10px;
+        top: 10px;
+    }
+    &__icon {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        z-index: 10;
+        left: 5px;
+        top: 2px;
+    }
+    &__icon-red {
+        left: 13px;
+        top: 11px;
     }
     &__category {
         position: absolute;
@@ -137,6 +153,7 @@ $tabletLS: 1130px;
     &__right {
         margin-left: 304px;
         display: flex;
+        z-index: 10;
         @extend %subtitle;
         color: #6F6E6E;
         img {
@@ -173,6 +190,7 @@ $tabletLS: 1130px;
         box-sizing: border-box;
         font-size: 14px;
         color: #6f6e6e;
+        z-index: 10;
     }
     div {
         margin-top: 5px;
@@ -201,4 +219,8 @@ $tabletLS: 1130px;
     .fa {
         color: #000000
     }
+}
+
+.subscribe__container {
+    background: url(../img/phot_subscribe.png) no-repeat;
 }

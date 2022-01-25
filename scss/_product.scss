@@ -40,11 +40,97 @@
         background: #ffffff;
         border: 1px solid #EAEAEA;
         margin: -64px auto 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: space-around;
     }
-    &-title {}
-    &-subtitle {}
-    &-text {}
-    &-price {}
-    &-sort {}
-    &-add {}
+    &-title {
+        @extend %subtitle;
+        color: #F16D7F;
+        font-weight: 300;
+        margin-top: 64px;
+    }
+    &-divider {
+        width: 63px;
+        height: 3px;
+        background: #ef5b70;
+        margin-top: 12px;
+    }
+    &-subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-top: 12px;
+    }
+    &-text {
+        width: 555px;
+        @extend %subtitle_fetured;
+        color: #5E5E5E;
+        text-align: center;
+        margin-top: 48px;
+    }
+    &-price {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-top: 32px;
+    }
+    &-dividerDown {
+        height: 1px;
+        width: 642px;
+        border: 1px solid #EAEAEA;
+        margin-top: 65px;
+    }
+    &-sort {
+        margin-top: 65px;
+    }
+    &-add {
+        width: 211px;
+        height: 47px;
+        margin-top: 48px;
+        border: 1px solid #FF6A6A;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        padding: 15px 44px;
+    }
+}
+
+.filter__sort {
+    display: flex;
+    z-index: 10;
+    @extend %subtitle;
+    color: #6F6E6E;
+    img {
+        position: relative;
+        bottom: 3px;
+        left: 3px;
+    }
+    .filter__sort-left {}
+    .sort-title {
+        margin: 0 11px;
+        padding: 0 11px;
+        & img {}
+    }
+    .sort-item {}
+    .item__style {}
+    .filter__sort-middle {}
+    .filter__sort-right {}
+}
+
+.subscribe__container {
+    background: url(../img/phot_subscribe.png) no-repeat;
+}
+
+.fetured {
+    margin-bottom: 128px;
 }
