@@ -663,7 +663,8 @@ body {
 /*---------------------------------------------------*/
 .subscribe__container {
   min-height: 448px;
-  background: url(img/phot_subscribe.png) no-repeat;
+  background: url(../img/phot_subscribe.png) no-repeat;
+  background-size: cover !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,11 +797,11 @@ body {
 
 /*-----------------------------------------------------*/
 .footer {
-  background: #222224 no-repeat;
+  background: #222224;
   padding: 24px 0;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 640px) {
   .footer {
     padding: 0;
   }
@@ -815,14 +816,16 @@ body {
           justify-content: space-between;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 640px) {
   .footer__container {
     min-height: 143px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    justify-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -843,12 +846,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 640px) {
   .rights {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 0 0 9px 0;
+    margin-left: 0;
   }
 }
 
@@ -864,12 +867,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 640px) {
   .social__icons {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin: 43px 0 40px 0;
+    margin: 43px 0 25px 0;
   }
 }
 
@@ -920,15 +923,15 @@ body {
   padding: 0 16px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .new .new__inside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -938,9 +941,9 @@ body {
   color: #F16D7F;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
   .new .new__inside-left {
-    margin-bottom: 32px;
+    margin: 24px auto 32px;
   }
 }
 
@@ -979,11 +982,41 @@ body {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1130px) {
+  .fetured__item-box:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fetured {
+    margin-bottom: 65px !important;
+  }
+}
+
 .filter {
   margin: 51px auto 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 1130px) {
+  .filter {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .filter {
+    margin: 24px auto 40px;
+    margin-left: 0;
+    margin-right: 16px;
+  }
 }
 
 .filter__left {
@@ -994,7 +1027,7 @@ body {
   display: flex;
 }
 
-.filter__left:hover {
+.filter__left:hover, .filter__icon:hover {
   color: #EF5B70 !important;
 }
 
@@ -1003,6 +1036,12 @@ body {
   color: #000000;
   position: relative;
   z-index: 10;
+}
+
+@media only screen and (max-width: 375px) {
+  .filter__title {
+    display: none;
+  }
 }
 
 .filter__title-red {
@@ -1018,6 +1057,13 @@ body {
   z-index: 10;
   left: 5px;
   top: 2px;
+}
+
+@media only screen and (max-width: 375px) {
+  .filter__icon {
+    width: 37px;
+    height: 25px;
+  }
 }
 
 .filter__icon-red {
@@ -1079,6 +1125,20 @@ body {
   left: 4px;
 }
 
+@media only screen and (max-width: 768px) {
+  .filter__right {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .filter__right {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
 .filter__trending {
   position: relative;
 }
@@ -1113,6 +1173,12 @@ body {
   margin-top: 5px;
 }
 
+@media only screen and (max-width: 640px) {
+  .filter div {
+    margin-top: 0;
+  }
+}
+
 .numbering {
   margin: 48px auto 96px;
   width: 284px;
@@ -1126,6 +1192,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-radius: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+  .numbering {
+    margin: 40px auto 63px;
+  }
 }
 
 .numbering a {
@@ -1144,8 +1216,8 @@ body {
   color: #000000;
 }
 
-.subscribe__container {
-  background: url(../img/phot_subscribe.png) no-repeat;
+.subscribe__ .subscribe__form {
+  max-height: 137px;
 }
 
 .slide {

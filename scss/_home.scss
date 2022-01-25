@@ -1,5 +1,7 @@
 $arm: 375px;
+$armLS: 640px;
 $tablet: 768px;
+$tabletLS: 1130px;
 @mixin respond-to ($media) {
     @if $media==arm {
         @media only screen and (max-width: $arm) {
@@ -8,6 +10,16 @@ $tablet: 768px;
     }
     @else if $media==tablet {
         @media only screen and (max-width: $tablet) {
+            @content;
+        }
+    }
+    @else if $media==armLS {
+        @media only screen and (max-width: $armLS) {
+            @content;
+        }
+    }
+    @else if $media==tabletLS {
+        @media only screen and (max-width: $tabletLS) {
             @content;
         }
     }
@@ -445,7 +457,8 @@ $tablet: 768px;
 .subscribe {
     &__container {
         min-height: 448px;
-        background: url(img/phot_subscribe.png) no-repeat;
+        background: url(../img/phot_subscribe.png) no-repeat;
+        background-size: cover !important;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -545,19 +558,18 @@ $tablet: 768px;
 /*-----------------------------------------------------*/
 
 .footer {
-    background: #222224 no-repeat;
+    background: #222224;
     padding: 24px 0;
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         padding: 0;
     }
     &__container {
         display: flex;
         justify-content: space-between;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             min-height: 143px;
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-items: center;
+            flex-direction: column;
+            justify-content: start;
             align-items: center;
         }
     }
@@ -572,9 +584,9 @@ $tablet: 768px;
     @include respond-to(tablet) {
         margin-left: 32px;
     }
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         order: 2;
-        margin: 0 0 9px 0;
+        margin-left: 0;
     }
 }
 
@@ -583,9 +595,9 @@ $tablet: 768px;
     @include respond-to(tablet) {
         margin-right: 32px;
     }
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         order: 1;
-        margin: 43px 0 40px 0;
+        margin: 43px 0 25px 0;
     }
 }
 
