@@ -1,30 +1,29 @@
-$arm: 375px;
-$armLS: 640px;
-$tablet: 768px;
-$tabletLS: 1130px;
-@mixin respond-to ($media) {
-    @if $media==arm {
-        @media only screen and (max-width: $arm) {
-            @content;
-        }
-    }
-    @else if $media==tablet {
-        @media only screen and (max-width: $tablet) {
-            @content;
-        }
-    }
-    @else if $media==armLS {
-        @media only screen and (max-width: $armLS) {
-            @content;
-        }
-    }
-    @else if $media==tabletLS {
-        @media only screen and (max-width: $tabletLS) {
-            @content;
-        }
-    }
-}
-
+//$arm: 375px;
+//$armLS: 640px;
+//$tablet: 768px;
+//$tabletLS: 1130px;
+//@mixin respond-to ($media) {
+//    @if $media==arm {
+//        @media only screen and (max-width: $arm) {
+//            @content;
+//        }
+//    }
+//    @else if $media==tablet {
+//        @media only screen and (max-width: $tablet) {
+//            @content;
+//        }
+//    }
+//    @else if $media==armLS {
+//        @media only screen and (max-width: $armLS) {
+//            @content;
+//        }
+//    }
+//    @else if $media==tabletLS {
+//        @media only screen and (max-width: $tabletLS) {
+//            @content;
+//        }
+//    }
+//}
 
 /*---------------------------------------*/
 
@@ -107,12 +106,12 @@ $tabletLS: 1130px;
     min-height: inherit;
     background: #F1E4E6;
     display: flex;
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         min-height: 363px;
     }
     &-left {
         display: block;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             display: none;
         }
     }
@@ -120,7 +119,7 @@ $tabletLS: 1130px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             justify-content: center;
         }
     }
@@ -129,7 +128,7 @@ $tabletLS: 1130px;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
         margin-left: 64px;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             height: 61px;
             margin: 0;
         }
@@ -146,7 +145,7 @@ $tabletLS: 1130px;
         font-size: 48px;
         line-height: 58px;
         color: #222222;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             font-size: 37px;
             line-height: 44px;
         }
@@ -164,14 +163,14 @@ $tabletLS: 1130px;
             font-size: 24px;
             line-height: 28px;
         }
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             font-size: 20px;
             line-height: 32px;
         }
     }
     &>div {
         width: 50vw;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             width: 100%;
         }
     }
@@ -242,7 +241,7 @@ $tabletLS: 1130px;
     @include respond-to(tablet) {
         padding: 20px 0 155px 0;
     }
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         grid-template-columns: 1fr;
         grid-template-rows: 248px 248px 248px 111px;
         gap: 32px;

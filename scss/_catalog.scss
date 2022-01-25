@@ -1,30 +1,3 @@
-$arm: 375px;
-$armLS: 640px;
-$tablet: 768px;
-$tabletLS: 1130px;
-@mixin respond-to ($media) {
-    @if $media==arm {
-        @media only screen and (max-width: $arm) {
-            @content;
-        }
-    }
-    @else if $media==tablet {
-        @media only screen and (max-width: $tablet) {
-            @content;
-        }
-    }
-    @else if $media==armLS {
-        @media only screen and (max-width: $armLS) {
-            @content;
-        }
-    }
-    @else if $media==tabletLS {
-        @media only screen and (max-width: $tabletLS) {
-            @content;
-        }
-    }
-}
-
 .new {
     background: #F8F3F4;
     .new__inside {

@@ -2,6 +2,9 @@
     background: #F7F7F7;
     height: 777px;
     position: relative;
+    @include respond-to(tabletLS) {
+        height: 624px;
+    }
     &__button-left {
         width: 47px;
         height: 47px;
@@ -127,10 +130,9 @@
     .filter__sort-right {}
 }
 
-.subscribe__container {
-    background: url(../img/phot_subscribe.png) no-repeat;
-}
-
+//.subscribe__container {
+//    background: url(../img/phot_subscribe.png) no-repeat;
+//}
 .fetured {
     margin-bottom: 128px;
 }
