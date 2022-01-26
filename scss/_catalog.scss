@@ -78,6 +78,7 @@
         position: relative;
         z-index: 10;
         display: flex;
+        cursor: pointer;
     }
     &__left:hover,
     &__icon:hover {
@@ -151,6 +152,7 @@
         z-index: 10;
         @extend %subtitle;
         color: #6F6E6E;
+        cursor: pointer;
         img {
             position: relative;
             bottom: 3px;

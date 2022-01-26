@@ -1029,6 +1029,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .filter__left:hover, .filter__icon:hover {
@@ -1121,6 +1122,7 @@ body {
   display: flex;
   z-index: 10;
   color: #6F6E6E;
+  cursor: pointer;
 }
 
 .filter__right img {
