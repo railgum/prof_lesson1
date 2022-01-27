@@ -1,8 +1,36 @@
 .cart {
-    &__left {}
-    &__exit {}
-    &__left-item {}
-    &__left-img {}
+    display: flex;
+    //flex: column wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    &__left {
+        margin-top: 96px;
+    }
+    &__left-wrap {
+        width: 652px;
+        height: 306px;
+        position: relative;
+        display: flex;
+        justify-content: start;
+    }
+    &__exit {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+    }
+    &__left-item {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 40px;
+    }
+    &__left-img {
+        display: block;
+        object-fit: contain;
+    }
+    &__left-label {
+        width: 262px;
+        height: 222px;
+    }
     &__left-title {}
     &__left-text {}
     &__left-price {}
@@ -14,9 +42,15 @@
         .continue__btn {}
     }
     &__right {}
-    &__right-form {}
+    &__right-form {
+        width: 360px;
+        height: 272px;
+    }
     &__right-title {}
-    &__right-bascket {}
+    &__right-bascket {
+        width: 360px;
+        height: 214px;
+    }
     &__right-subtotal {}
     &__right-grandtotal {}
 }
