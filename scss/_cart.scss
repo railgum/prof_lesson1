@@ -21,12 +21,8 @@
     &__left-item {
         display: flex;
         justify-content: start;
-        margin-bottom: 40px;
     }
-    &__left-img {
-        display: block;
-        object-fit: contain;
-    }
+    &__left-img {}
     &__left-label {
         width: 262px;
         height: 222px;

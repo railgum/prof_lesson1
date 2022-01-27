@@ -1508,13 +1508,6 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-bottom: 40px;
-}
-
-.cart__left-img {
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .cart__left-label {
