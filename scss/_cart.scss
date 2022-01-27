@@ -1,0 +1,22 @@
+.cart {
+    &__left {}
+    &__exit {}
+    &__left-item {}
+    &__left-img {}
+    &__left-title {}
+    &__left-text {}
+    &__left-price {}
+    &__left-color {}
+    &__left-size {}
+    &__left-quantity {}
+    &__left-btn {
+        .clear__btn {}
+        .continue__btn {}
+    }
+    &__right {}
+    &__right-form {}
+    &__right-title {}
+    &__right-bascket {}
+    &__right-subtotal {}
+    &__right-grandtotal {}
+}
