@@ -3,8 +3,16 @@
     //flex: column wrap;
     flex: 1 1 auto;
     justify-content: space-between;
+    @include respond-to (tabletLS) {
+        flex-direction: column;
+        //flex-basis: 734px;
+        align-items: center;
+    }
     &__left {
         margin-top: 96px;
+        @include respond-to (tabletLS) {
+            margin-top: 59px;
+        }
     }
     &__left-wrap {
         background: #fff;
@@ -14,7 +22,10 @@
         display: flex;
         justify-content: start;
         margin-bottom: 40px;
-        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        @include respond-to (tabletLS) {
+            width: 734px;
+        }
     }
     &__exit {
         position: absolute;
@@ -25,7 +36,7 @@
         display: flex;
         justify-content: start;
     }
-    &__left-img {}
+    //&__left-img {}
     &__left-label {
         width: 210px;
         height: 222px;
@@ -51,8 +62,8 @@
     &__left-price {
         color: #EF5B70;
     }
-    &__left-color {}
-    &__left-size {}
+    //&__left-color {}
+    //&__left-size {}
     &__left-quantity {
         display: inline-block;
         text-align: center;
@@ -65,6 +76,10 @@
         display: flex;
         justify-content: space-between;
         margin: 32px 0 128px;
+        @include respond-to (tabletLS) {
+            justify-content: center;
+            margin: 22px 0 64px;
+        }
         .clear__btn,
         .continue__btn {
             display: flex;
@@ -78,13 +93,28 @@
             font-size: 14px;
             line-height: 17px;
             color: #575757;
+            @include respond-to (tabletLS) {
+                width: 225px;
+                margin-right: 24px;
+                margin-left: 24px;
+            }
         }
     }
-    &__right {}
+    &__right {
+        @include respond-to (tabletLS) {
+            display: flex;
+            justify-content: space-between;
+            width: 734px;
+            margin-bottom: 128px;
+        }
+    }
     &__right-form {
         width: 360px;
         height: 272px;
         margin-top: 113px;
+        @include respond-to (tabletLS) {
+            margin-top: 0;
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -123,6 +153,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        @include respond-to (tabletLS) {
+            margin-top: 39px;
+        }
         button {
             width: 273px;
             height: 50px;
