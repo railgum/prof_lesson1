@@ -1465,6 +1465,15 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .cart__new-wrap {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin: 0;
+  }
+}
+
 .cart {
   display: -webkit-box;
   display: -ms-flexbox;
