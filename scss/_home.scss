@@ -442,7 +442,7 @@
     &__manager {
         max-width: 360px;
         height: 225px;
-        margin-top: 97px;
+        //margin-top: 97px;
         text-align: center;
         @include respond-to(tablet) {
             margin-top: 64px;
@@ -465,7 +465,7 @@
     &__form {
         max-width: 557px;
         height: 142px;
-        margin-top: 150px;
+        //margin-top: 150px;
         text-align: center;
         @include respond-to(tablet) {
             margin: 48px 0 140px 0;

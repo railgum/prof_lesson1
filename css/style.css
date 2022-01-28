@@ -692,7 +692,6 @@ body {
 .subscribe__manager {
   max-width: 360px;
   height: 225px;
-  margin-top: 97px;
   text-align: center;
 }
 
@@ -724,7 +723,6 @@ body {
 .subscribe__form {
   max-width: 557px;
   height: 142px;
-  margin-top: 150px;
   text-align: center;
 }
 
@@ -1484,6 +1482,7 @@ body {
 }
 
 .cart__left-wrap {
+  background: #fff;
   width: 652px;
   height: 306px;
   position: relative;
@@ -1493,6 +1492,9 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
+  margin-bottom: 40px;
+  -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+          filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
 .cart__exit {
@@ -1511,16 +1513,176 @@ body {
 }
 
 .cart__left-label {
-  width: 262px;
+  width: 210px;
   height: 222px;
+  margin-top: 22px;
+  margin-left: 31px;
+}
+
+.cart__left-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+}
+
+.cart__left-text {
+  margin-top: 42px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.cart__left-text li {
+  margin-bottom: 6px;
+}
+
+.cart__left-price {
+  color: #EF5B70;
+}
+
+.cart__left-quantity {
+  display: inline-block;
+  text-align: center;
+  width: 43px;
+  height: 24px;
+  margin-left: 24px;
+  border: 1px solid #EAEAEA;
+}
+
+.cart__left-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 32px 0 128px;
+}
+
+.cart__left-btn .clear__btn,
+.cart__left-btn .continue__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 234px;
+  height: 49px;
+  border: 1px solid #A4A4A4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #575757;
 }
 
 .cart__right-form {
   width: 360px;
   height: 272px;
+  margin-top: 113px;
+}
+
+.cart__right-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart__right-form form input {
+  width: 359px;
+  height: 44px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  padding-left: 17px;
+}
+
+.cart__right-form form button {
+  width: 101px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #A4A4A4;
+}
+
+.cart__right-title {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
 }
 
 .cart__right-bascket {
   width: 360px;
   height: 214px;
+  margin-top: 57px;
+  background: #F5F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cart__right-bascket button {
+  width: 273px;
+  height: 50px;
+  margin-top: 17px;
+  background: #F16D7F;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cart__right-subtotal {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-top: 39px;
+  margin-right: 34px;
+}
+
+.cart__right-grandtotal {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 12px;
+  margin-right: 37px;
+}
+
+.cart .bascket-snape {
+  width: 275px;
+  height: 1px;
+  outline: 1px solid #E2E2E2;
+  margin-top: 21px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
