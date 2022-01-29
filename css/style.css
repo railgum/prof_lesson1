@@ -984,9 +984,15 @@ body {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .fetured__item-box:last-child {
+@media (max-width: 1140px) {
+  .fetured__item-box:last-child:nth-child(odd) {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .fetured__item-box:last-child:nth-child(odd) {
+    display: block;
   }
 }
 
@@ -1465,6 +1471,24 @@ body {
   }
 }
 
+@-webkit-keyframes myAnim {
+  0% {
+    left: 39.5%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    left: 39.5%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
 @media (max-width: 768px) {
   .cart__new-wrap {
     -webkit-box-pack: center !important;
@@ -1508,6 +1532,22 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .cart__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 39px;
+  }
+}
+
 .cart__left-wrap {
   background: #fff;
   width: 652px;
@@ -1530,19 +1570,45 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .cart__left-wrap {
+    max-width: 358px;
+    height: 188px;
+    margin-bottom: 32px;
+    -webkit-filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+            filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+  }
+}
+
 .cart__exit {
   position: absolute;
   top: 28px;
   right: 22px;
 }
 
-.cart__left-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+.cart__left-img {
+  position: relative;
+  left: 39.5%;
+  -webkit-animation-name: myAnim;
+          animation-name: myAnim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.cart__left-img img {
+  width: 262px;
+  height: 306px;
+}
+
+@media (max-width: 768px) {
+  .cart__left-img img {
+    width: 144px;
+    height: 188px;
+  }
 }
 
 .cart__left-label {
@@ -1552,11 +1618,27 @@ body {
   margin-left: 31px;
 }
 
+@media (max-width: 768px) {
+  .cart__left-label {
+    height: 188px;
+    width: 140px;
+    margin-top: 13px;
+    margin-left: 17px;
+  }
+}
+
 .cart__left-title {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #222222;
+}
+
+@media (max-width: 768px) {
+  .cart__left-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .cart__left-text {
@@ -1565,6 +1647,14 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #575757;
+}
+
+@media (max-width: 768px) {
+  .cart__left-text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 25px;
+  }
 }
 
 .cart__left-text li {
@@ -1603,6 +1693,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .cart__left-btn {
+    margin: -2px 0 48px;
+  }
+}
+
 .cart__left-btn .clear__btn,
 .cart__left-btn .continue__btn {
   display: -webkit-box;
@@ -1633,6 +1729,18 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .cart__left-btn .clear__btn,
+  .cart__left-btn .continue__btn {
+    width: 175px;
+    height: 33px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
 @media (max-width: 1140px) {
   .cart__right {
     display: -webkit-box;
@@ -1643,6 +1751,19 @@ body {
             justify-content: space-between;
     width: 734px;
     margin-bottom: 128px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart__right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 96px;
   }
 }
 
@@ -1687,6 +1808,14 @@ body {
   border: 1px solid #A4A4A4;
 }
 
+@media (max-width: 768px) {
+  .cart__right-form form button {
+    font-size: 11px;
+    line-height: 13px;
+    color: #575757;
+  }
+}
+
 .cart__right-title {
   margin-bottom: 20px;
   font-style: normal;
@@ -1716,6 +1845,12 @@ body {
 @media (max-width: 1140px) {
   .cart__right-bascket {
     margin-top: 39px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart__right-bascket {
+    margin-top: 48px;
   }
 }
 

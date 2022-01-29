@@ -294,6 +294,7 @@
     &__item-box {
         max-width: 360px;
         justify-items: center;
+        @include respond-to (tabletLS) {}
         @include respond-to (tablet) {
             display: flex;
             flex-direction: column;

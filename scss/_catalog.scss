@@ -49,9 +49,12 @@
     }
 }
 
-.fetured__item-box:last-child {
-    @include respond-to(tablet) {
+.fetured__item-box:last-child:nth-child(odd) {
+    @include respond-to(tabletLS) {
         display: none;
+    }
+    @include respond-to (armLS) {
+        display: block;
     }
 }
 
