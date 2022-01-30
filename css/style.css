@@ -1909,17 +1909,7 @@ body {
 }
 
 .b-reg__aboutUser {
-  width: 360px;
-  height: 149px;
-}
-
-.b-reg__name {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  margin-top: 64px;
 }
 
 .b-reg__name-title {
@@ -1936,4 +1926,17 @@ body {
       flex-wrap: nowrap;
   width: 100% !important;
   height: 45px;
+}
+
+.b-reg__name-first {
+  margin: 20px auto;
+}
+
+.b-reg__radio {
+  margin-top: 31px;
+  margin-bottom: 33px;
+}
+
+.b-reg__login-title {
+  margin-bottom: 20px;
 }

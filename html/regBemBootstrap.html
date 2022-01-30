@@ -49,13 +49,13 @@
         <div class="b-reg _container">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 b-reg__aboutUser">
                         <div class="input-group b-reg__name">
                             <span class="input-group-text b-reg__name-title">Your Names</span>
-                            <input type="text" aria-label="First name" class="form-control b-reg__name-first">
-                            <input type="text" aria-label="Last name" class="form-control b-reg__name-last">
+                            <input type="text" placeholder="First Name" class="form-control b-reg__name-first">
+                            <input type="text" placeholder="Last Name" class="form-control b-reg__name-last">
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline b-reg__radio">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                             <label class="form-check-label" for="inlineRadio1">Male</label>
                         </div>
@@ -66,12 +66,12 @@
                         <div class="b-reg__login">
                             <div class="form-floating mb-3">
                                 <div class="b-reg__login-title">Login details</div>
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                                <input type="email" aria-placeholder="Email" class="form-control" id="floatingInput">
+                                <label for="floatingInput"></label>
                             </div>
                             <div class="form-floating">
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword">Password</label>
+                                <label for="floatingPassword"></label>
                             </div>
                         </div>
                         <div class="b-reg__aboutUser-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</div>

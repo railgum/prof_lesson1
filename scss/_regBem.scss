@@ -2,9 +2,12 @@
     min-height: 675px;
     display: flex;
     justify-content: start;
+    &__aboutUser {
+        margin-top: 64px;
+    }
     &__name {
-        flex-direction: column;
-        flex-wrap: nowrap;
+        //flex-direction: column;
+        //flex-wrap: nowrap;
         &-title {
             font-weight: 300;
             font-size: 16px;
@@ -19,5 +22,15 @@
             width: 100%!important;
             height: 45px;
         }
+        &-first {
+            margin: 20px auto;
+        }
+    }
+    &__radio {
+        margin-top: 31px;
+        margin-bottom: 33px;
+    }
+    &__login-title {
+        margin-bottom: 20px;
     }
 }
