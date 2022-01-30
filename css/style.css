@@ -346,6 +346,7 @@ body {
   margin-left: 21px;
 }
 
+/*-----------------------------------------------------*/
 .type {
   display: -ms-grid;
   display: grid;
@@ -1268,7 +1269,7 @@ body {
 }
 
 .slide__img {
-  padding-top: 85px;
+  padding-top: 15px;
 }
 
 .slide__img img {
