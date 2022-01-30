@@ -1,5 +1,7 @@
 .b-reg {
     min-height: 675px;
+    display: flex;
+    justify-content: start;
     &__aboutUser {
         width: 360px;
         height: 149px;

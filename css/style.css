@@ -1900,6 +1900,12 @@ body {
 
 .b-reg {
   min-height: 675px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .b-reg__aboutUser {
