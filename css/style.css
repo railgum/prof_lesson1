@@ -1897,3 +1897,37 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
 }
+
+.b-reg {
+  min-height: 675px;
+}
+
+.b-reg__aboutUser {
+  width: 360px;
+  height: 149px;
+}
+
+.b-reg__name {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.b-reg__name-title {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  background: #fff;
+  border: hidden;
+}
+
+.b-reg__name-first, .b-reg__name-last {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100% !important;
+  height: 45px;
+}

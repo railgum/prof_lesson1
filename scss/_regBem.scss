@@ -1,0 +1,25 @@
+.b-reg {
+    min-height: 675px;
+    &__aboutUser {
+        width: 360px;
+        height: 149px;
+    }
+    &__name {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        &-title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            background: #fff;
+            border: hidden;
+        }
+        &-first,
+        &-last {
+            flex-wrap: nowrap;
+            width: 100%!important;
+            height: 45px;
+        }
+    }
+}
