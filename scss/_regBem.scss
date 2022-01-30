@@ -2,10 +2,6 @@
     min-height: 675px;
     display: flex;
     justify-content: start;
-    &__aboutUser {
-        width: 360px;
-        height: 149px;
-    }
     &__name {
         flex-direction: column;
         flex-wrap: nowrap;
