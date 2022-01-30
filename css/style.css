@@ -1898,6 +1898,12 @@ body {
       align-self: center;
 }
 
+.reg__new-wrap {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
 .b-reg {
   min-height: 675px;
   display: -webkit-box;
@@ -1908,8 +1914,58 @@ body {
           justify-content: start;
 }
 
+@media (max-width: 768px) {
+  .b-reg {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .b-reg {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
 .b-reg__aboutUser {
   margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .b-reg__aboutUser {
+    width: 48%;
+  }
+}
+
+@media (max-width: 375px) {
+  .b-reg__aboutUser {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.b-reg__aboutUser-text {
+  margin: 15px auto 39px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.b-reg__aboutUser-btn {
+  width: 167px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.b-reg__aboutUser-btn::after {
+  content: "" url(../img/btnArrow.svg);
+  padding-left: 20px;
 }
 
 .b-reg__name-title {
@@ -1926,6 +1982,10 @@ body {
       flex-wrap: nowrap;
   width: 100% !important;
   height: 45px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
 }
 
 .b-reg__name-first {
@@ -1935,8 +1995,82 @@ body {
 .b-reg__radio {
   margin-top: 31px;
   margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .b-reg__radio {
+    display: inline-block;
+  }
 }
 
 .b-reg__login-title {
   margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.b-reg__login-placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.b-reg__loyalty {
+  margin-left: 116px;
+  margin-top: 64px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (max-width: 768px) {
+  .b-reg__loyalty {
+    width: 48%;
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 375px) {
+  .b-reg__loyalty {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
+}
+
+.b-reg__loyalty-title {
+  margin-bottom: 22px;
+}
+
+.b-reg__loyalty-text {
+  width: 652px;
+}
+
+@media (max-width: 1140px) {
+  .b-reg__loyalty-text {
+    width: 354px;
+  }
+}
+
+@media (max-width: 640px) {
+  .b-reg__loyalty-text {
+    width: 100%;
+  }
+}
+
+.b-reg__loyalty-marker {
+  margin-top: 21px;
+}
+
+.b-reg__loyalty-marker li {
+  margin-bottom: 16px;
+  list-style-image: url(../img/regMarker.svg);
 }
