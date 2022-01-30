@@ -762,8 +762,12 @@ body {
   }
 }
 
-.subscribe__form-btn input {
+.subscribe__form-btn {
   height: 49px;
+}
+
+.subscribe__form-btn input {
+  height: inherit;
   width: 256px;
   border: none;
   -webkit-box-sizing: border-box;
@@ -776,6 +780,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #222224;
+  float: left;
 }
 
 @media (max-width: 375px) {
@@ -834,7 +839,7 @@ body {
   }
 }
 
-.rights {
+.footer .rights {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
@@ -843,13 +848,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .rights {
+  .footer .rights {
     margin-left: 32px;
   }
 }
 
 @media (max-width: 640px) {
-  .rights {
+  .footer .rights {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -857,20 +862,20 @@ body {
   }
 }
 
-.social__icons {
+.footer .social__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 768px) {
-  .social__icons {
+  .footer .social__icons {
     margin-right: 32px;
   }
 }
 
 @media (max-width: 640px) {
-  .social__icons {
+  .footer .social__icons {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -878,7 +883,7 @@ body {
   }
 }
 
-.social__icons-item {
+.footer .social__icons-item {
   width: 32px;
   height: 32px;
   background: #FFF;
@@ -894,16 +899,16 @@ body {
   margin-right: 5px;
 }
 
-.social__icons-item a {
+.footer .social__icons-item a {
   color: #000;
   text-decoration: none;
 }
 
-.social__icons-item:hover {
+.footer .social__icons-item:hover {
   background: #ef5b70;
 }
 
-.social__icons-item:hover a {
+.footer .social__icons-item:hover a {
   color: #FFFFFF;
 }
 
