@@ -12,16 +12,16 @@
         left: 0;
         top: 365px;
         z-index: 1;
-        background: url(../img/Slide/slide-left.svg) center no-repeat rgba(42, 42, 42, 0.15);
+        background: url(#{$img}Slide/slide-left.svg) center no-repeat rgba(42, 42, 42, 0.15);
         @include respond-to (tabletLS) {
             top: 288px;
         }
     }
     &__button-left:hover {
-        background: url(../img/Slide/slide-left-hover.svg) center no-repeat rgba(42, 42, 42, 0.15);
+        background: url(#{$img}Slide/slide-left-hover.svg) center no-repeat rgba(42, 42, 42, 0.15);
     }
     &__img {
-        padding-top: 85px;
+        padding-top: 15px;
     }
     &__img img {
         display: block;

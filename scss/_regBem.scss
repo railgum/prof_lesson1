@@ -35,7 +35,7 @@
             line-height: 17px;
         }
         &-btn::after {
-            content: "" url(../img/btnArrow.svg);
+            content: "" url(#{$img}btnArrow.svg);
             padding-left: 20px;
         }
     }
@@ -118,7 +118,7 @@
             margin-top: 21px;
             li {
                 margin-bottom: 16px;
-                list-style-image: url(../img/regMarker.svg);
+                list-style-image: url(#{$img}regMarker.svg);
             }
         }
     }
