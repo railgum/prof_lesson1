@@ -7,3 +7,7 @@
 $fontFamily: "Montserrat",
 sans-serif;
 $fontSize: rem(16);
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
