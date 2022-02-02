@@ -49,9 +49,12 @@
     }
 }
 
-.fetured__item-box:last-child {
+.fetured__item-box:last-child:nth-child(odd) {
     @include respond-to(tabletLS) {
         display: none;
+    }
+    @include respond-to (armLS) {
+        display: block;
     }
 }
 
@@ -78,6 +81,7 @@
         position: relative;
         z-index: 10;
         display: flex;
+        cursor: pointer;
     }
     &__left:hover,
     &__icon:hover {
@@ -151,6 +155,7 @@
         z-index: 10;
         @extend %subtitle;
         color: #6F6E6E;
+        cursor: pointer;
         img {
             position: relative;
             bottom: 3px;
@@ -214,13 +219,13 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #c4c4c4
+        color: #c4c4c4;
     }
     a:hover {
         color: #EF5B70;
     }
     .fa {
-        color: #000000
+        color: #000000;
     }
 }
 

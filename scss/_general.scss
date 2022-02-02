@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap');
+$img: "../img/";
 %title {
     font-weight: normal;
     font-size: 30px;
@@ -37,25 +38,25 @@
 $arm: 375px;
 $armLS: 640px;
 $tablet: 768px;
-$tabletLS: 1130px;
+$tabletLS: 1140px;
 @mixin respond-to ($media) {
     @if $media==arm {
-        @media only screen and (max-width: $arm) {
+        @media (max-width: $arm) {
             @content;
         }
     }
     @else if $media==tablet {
-        @media only screen and (max-width: $tablet) {
+        @media (max-width: $tablet) {
             @content;
         }
     }
     @else if $media==armLS {
-        @media only screen and (max-width: $armLS) {
+        @media (max-width: $armLS) {
             @content;
         }
     }
     @else if $media==tabletLS {
-        @media only screen and (max-width: $tabletLS) {
+        @media (max-width: $tabletLS) {
             @content;
         }
     }

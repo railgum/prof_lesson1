@@ -203,6 +203,9 @@
     }
 }
 
+
+/*-----------------------------------------------------*/
+
 .type {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -429,7 +432,7 @@
 .subscribe {
     &__container {
         min-height: 448px;
-        background: url(../img/phot_subscribe.png) no-repeat;
+        background: url(#{$img}phot_subscribe.png) no-repeat;
         background-size: cover !important;
         display: flex;
         justify-content: space-around;
@@ -442,7 +445,7 @@
     &__manager {
         max-width: 360px;
         height: 225px;
-        margin-top: 97px;
+        //margin-top: 97px;
         text-align: center;
         @include respond-to(tablet) {
             margin-top: 64px;
@@ -465,7 +468,7 @@
     &__form {
         max-width: 557px;
         height: 142px;
-        margin-top: 150px;
+        //margin-top: 150px;
         text-align: center;
         @include respond-to(tablet) {
             margin: 48px 0 140px 0;
@@ -493,36 +496,38 @@
             margin-bottom: 22px;
         }
     }
-    &__form-btn input {
+    &__form-btn {
         height: 49px;
-        width: 256px;
-        border: none;
-        box-sizing: border-box;
-        border-top-left-radius: 18px;
-        border-bottom-left-radius: 18px;
-        padding-left: 20px;
-        background-color: #E1E1E1;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #222224;
-        @include respond-to(arm) {
-            width: 200px;
+        input {
+            height: inherit;
+            width: 256px;
+            border: none;
+            box-sizing: border-box;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            padding-left: 20px;
+            background-color: #E1E1E1;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #222224;
+            float: left;
+            @include respond-to(arm) {
+                width: 200px;
+            }
         }
-    }
-    &__form-btn button {
-        height: 49px;
-        width: 100px;
-        border: none;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        background-color: #F16D7F;
-        ;
-        color: #FFFFFF;
-        ;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        button {
+            height: 49px;
+            width: 100px;
+            border: none;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+            background-color: #F16D7F;
+            color: #FFFFFF;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }
 
@@ -545,51 +550,47 @@
             align-items: center;
         }
     }
-}
-
-.rights {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-    padding-top: 6px;
-    @include respond-to(tablet) {
-        margin-left: 32px;
+    .rights {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        padding-top: 6px;
+        @include respond-to(tablet) {
+            margin-left: 32px;
+        }
+        @include respond-to(armLS) {
+            order: 2;
+            margin-left: 0;
+        }
     }
-    @include respond-to(armLS) {
-        order: 2;
-        margin-left: 0;
+    .social__icons {
+        display: flex;
+        @include respond-to(tablet) {
+            margin-right: 32px;
+        }
+        @include respond-to(armLS) {
+            order: 1;
+            margin: 43px 0 25px 0;
+        }
     }
-}
-
-.social__icons {
-    display: flex;
-    @include respond-to(tablet) {
-        margin-right: 32px;
+    .social__icons-item {
+        width: 32px;
+        height: 32px;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
     }
-    @include respond-to(armLS) {
-        order: 1;
-        margin: 43px 0 25px 0;
-    }
-}
-
-.social__icons-item {
-    width: 32px;
-    height: 32px;
-    background: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5px;
-    a {
-        color: #000;
-        text-decoration: none;
-    }
-}
-
-.social__icons-item:hover {
-    background: #ef5b70;
-    a {
-        color: #FFFFFF;
+    .social__icons-item:hover {
+        background: #ef5b70;
+        a {
+            color: #FFFFFF;
+        }
     }
 }
