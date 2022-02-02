@@ -6,8 +6,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&family=Playfair+Display:regular,700,700italic&display=swap");
 $fontFamily: "Montserrat",
 sans-serif;
-$fontSize: rem(16);
+$fontSize: 16px;
 body {
   font-family: $fontFamily;
   font-size: $fontSize;
 }
+
+$mainBGR: background: #282828;
+$collectionBGR: background: #E6E3C4;
+$footerBGR: background: #998431;
+$buttonBGR: background: #998431;
