@@ -7,4 +7,103 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  font-weight: 500;
+}
+
+.b-wrapper {
+  max-width: 1920px;
+}
+
+.b_container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.b-header {
+  height: 900px;
+  min-width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url(../addTask/image/headerBGR.jpg), #EDEDED;
+  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+}
+
+.b-header__label {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+}
+
+.b-header__menu {
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.b-header__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FFFFFF;
+}
+
+.b-header__item .itemCat {
+  border-left: none;
+}
+
+.b-header__item .itemCont {
+  border-right: none;
+}
+
+.b-header__selection {
+  width: 415px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 583px;
+  padding-left: calc(752px - 405px);
+}
+
+.b-header__vineList, .b-header__tasting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 182px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #998431;
 }

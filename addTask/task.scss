@@ -7,12 +7,159 @@
 $fontFamily: "Montserrat",
 sans-serif;
 $fontSize: 16px;
+$fontWeight: 500;
 body {
   font-family: $fontFamily;
   font-size: $fontSize;
+  font-weight: $fontWeight;
 }
 
-$mainBGR: background: #282828;
-$collectionBGR: background: #E6E3C4;
-$footerBGR: background: #998431;
-$buttonBGR: background: #998431;
+$mainBGR: #282828;
+$collectionBGR: #E6E3C4;
+$footerBGR: #998431;
+$buttonBGR: #998431;
+.b-wrapper {
+  max-width: 1920px;
+}
+
+.b_container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.b-header {
+  height: 900px;
+  min-width: 100%;
+  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+  &__label {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    line-height: 19.5px;
+    color: #FFFFFF;
+  }
+  &__menu {
+    height: 47px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    .itemCat {
+      border-left: none;
+    }
+    .itemCont {
+      border-right: none;
+    }
+  }
+  &__selection {
+    width: 415px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 583px;
+    padding-left: calc(752px - 405px);
+  }
+  &__vineList,
+  &__tasting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #998431;
+  }
+}
+
+.b-main {}
+
+.b-main__publicity {}
+
+.b-main__publicity-title {}
+
+.b-main__publicity-line {}
+
+.b-main__publicity-text {}
+
+.b-main__publicity-image {}
+
+.b-main__collection {}
+
+.b-main__collection-info {}
+
+.b-main__collection-label {}
+
+.b-main__collection-title {}
+
+.b-main__collection-line {}
+
+.b-main__collection-text {}
+
+.b-main__collection-table {}
+
+.b-main__collection-btn {}
+
+.b-main__collection-image {}
+
+.b-main__image-top {}
+
+.b-main__image-down {}
+
+.b-main__form {}
+
+.b-main__form-title {}
+
+.b-main__form-item {}
+
+.b-main__form-text {}
+
+.b-main__form-name {}
+
+.b-main__form-phone {}
+
+.b-main__form-place {}
+
+.b-main__form-btn {}
+
+.b-main__form-imageLeft {}
+
+.b-main__form-imageRight {}
+
+.b-footer {}
+
+.b-footer__menu {}
+
+.b-footer__menu-item {}
+
+.b-footer__label {}
+
+.b-footer__nameCompany {}
+
+.b-footer__phone {}
+
+.b-footer__social {}
+
+.b-footer__item {}
+
+.fa {}
+
+.fa-youtube-play {}
+
+.fa-vk {}
+
+.fa-facebook {}
+
+.b-footer__site {}
