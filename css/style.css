@@ -503,6 +503,10 @@ body {
   position: relative;
 }
 
+.fetured__item-imageNorm img {
+  display: block;
+}
+
 .fetured__item-box:hover .fetured__item-imageHover {
   display: -webkit-box;
   display: -ms-flexbox;

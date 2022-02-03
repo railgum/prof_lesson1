@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/*-----Подключения-------*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&family=Playfair+Display:regular,700,700italic&display=swap");
+.b-label {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: #FFFFFF;
+}
+
+.b-menu {
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.b-menu__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FFFFFF;
+}
+
+.b-menu__item:last-child {
+  border-right: none;
+}
+
+.b-menu__item:first-child {
+  border-left: none;
+}
+
+.b-buttonDouble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-buttonDouble__vineList, .b-buttonDouble__tasting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 182px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #998431;
+}
+
+.b-publicity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.b-publicity__item {
+  width: 1110px;
+  height: 656px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.b-publicity__title {
+  font-family: "Playfair Display";
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.b-publicity__line {
+  width: 160px;
+  border: 1px solid #FFFFFF;
+}
+
+.b-publicity__text {
+  width: 733px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 40px;
+}
+
+.b-publicity__image {
+  padding-top: 50px;
+}
+
+/*------Переменные-------*/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.b-wrapper {
+  max-width: 1920px;
+}
+
+.b_container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.b-header {
+  height: 900px;
+  min-width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url(../addTask/image/headerBGR.jpg), #EDEDED;
+  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+}
+
+.b-header__button {
+  width: 415px;
+  height: 50px;
+  padding-top: 583px;
+  padding-left: 347px;
+}
+
+.b-main__publicity {
+  height: 856px;
+  background: #282828;
+}

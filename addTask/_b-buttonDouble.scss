@@ -1,0 +1,18 @@
+@import "_general";
+.b-buttonDouble {
+  display: flex;
+  justify-content: space-between;
+  &__vineList,
+  &__tasting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 182px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: $buttonBGR;
+  }
+}

@@ -1,0 +1,21 @@
+.b-menu {
+  height: 47px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    &:last-child {
+      border-right: none;
+    }
+    &:first-child {
+      border-left: none;
+    }
+  }
+}

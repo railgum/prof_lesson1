@@ -1,0 +1,51 @@
+//* {
+//  margin: 0;
+//  padding: 0;
+//}
+
+/*-----Подключения-------*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&family=Playfair+Display:regular,700,700italic&display=swap");
+@import "_general";
+@import "_b-label";
+@import "_b-menu";
+@import "_b-buttonDouble";
+@import "_b-publicity";
+
+/*------Переменные-------*/
+
+body {
+  box-sizing: border-box;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+.b-wrapper {
+  max-width: 1920px;
+  //margin: auto;
+}
+
+.b_container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.b-header {
+  height: 900px;
+  min-width: 100%;
+  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  &__button {
+    width: 415px;
+    height: 50px;
+    padding-top: 583px;
+    padding-left: 347px;
+  }
+}
+
+.b-main__publicity {
+  height: 856px;
+  background: $mainBGR;
+}
