@@ -1,21 +1,3 @@
-$arm: 375px;
-$tablet: 768px;
-@mixin respond-to ($media) {
-    @if $media==arm {
-        @media only screen and (max-width: $arm) {
-            @content;
-        }
-    }
-    @else if $media==tablet {
-        @media only screen and (max-width: $tablet) {
-            @content;
-        }
-    }
-}
-
-
-/*---------------------------------------*/
-
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -95,12 +77,12 @@ $tablet: 768px;
     min-height: inherit;
     background: #F1E4E6;
     display: flex;
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         min-height: 363px;
     }
     &-left {
         display: block;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             display: none;
         }
     }
@@ -108,7 +90,7 @@ $tablet: 768px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             justify-content: center;
         }
     }
@@ -117,7 +99,7 @@ $tablet: 768px;
         border-left: 12px solid #F16D7F;
         padding-left: 16px;
         margin-left: 64px;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             height: 61px;
             margin: 0;
         }
@@ -134,7 +116,7 @@ $tablet: 768px;
         font-size: 48px;
         line-height: 58px;
         color: #222222;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             font-size: 37px;
             line-height: 44px;
         }
@@ -152,14 +134,14 @@ $tablet: 768px;
             font-size: 24px;
             line-height: 28px;
         }
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             font-size: 20px;
             line-height: 32px;
         }
     }
     &>div {
         width: 50vw;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             width: 100%;
         }
     }
@@ -221,6 +203,9 @@ $tablet: 768px;
     }
 }
 
+
+/*-----------------------------------------------------*/
+
 .type {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -230,7 +215,7 @@ $tablet: 768px;
     @include respond-to(tablet) {
         padding: 20px 0 155px 0;
     }
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         grid-template-columns: 1fr;
         grid-template-rows: 248px 248px 248px 111px;
         gap: 32px;
@@ -295,12 +280,13 @@ $tablet: 768px;
         background: #F8F8F8;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        justify-items: center;
         @include respond-to(tablet) {
             grid-template-columns: 1fr 1fr;
             column-gap: 16px;
             row-gap: 16px;
         }
-        @media (max-width: 1130px) {
+        @include respond-to (tabletLS) {
             grid-template-columns: repeat(2, 1fr);
         }
         @media (max-width: 760px) {
@@ -309,11 +295,39 @@ $tablet: 768px;
         }
     }
     &__item-box {
-        @media (max-width: 760px) {
-            width: 360px;
+        max-width: 360px;
+        justify-items: center;
+        @include respond-to (tablet) {
             display: flex;
             flex-direction: column;
             text-align: left;
+        }
+    }
+    &__item-imageNorm {
+        position: relative;
+    }
+    &__item-box:hover &__item-imageHover {
+        display: flex;
+    }
+    &__item-imageHover {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: rgba(58, 56, 56, 0.86);
+        button {
+            background: none;
+            border: 1px solid white;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 14px;
+            font-size: 14px;
+            font-family: inherit;
         }
     }
     &__item-text {
@@ -351,6 +365,12 @@ $tablet: 768px;
         font-size: 16px;
         line-height: 19px;
         color: #F26376;
+    }
+    &__btn:hover {
+        background: #F16D7F;
+        a {
+            color: #FFFFFF;
+        }
     }
 }
 
@@ -412,7 +432,8 @@ $tablet: 768px;
 .subscribe {
     &__container {
         min-height: 448px;
-        background: url(/img/phot_subscribe.png) no-repeat;
+        background: url(#{$img}phot_subscribe.png) no-repeat;
+        background-size: cover !important;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -424,7 +445,7 @@ $tablet: 768px;
     &__manager {
         max-width: 360px;
         height: 225px;
-        margin-top: 97px;
+        //margin-top: 97px;
         text-align: center;
         @include respond-to(tablet) {
             margin-top: 64px;
@@ -447,7 +468,7 @@ $tablet: 768px;
     &__form {
         max-width: 557px;
         height: 142px;
-        margin-top: 150px;
+        //margin-top: 150px;
         text-align: center;
         @include respond-to(tablet) {
             margin: 48px 0 140px 0;
@@ -475,36 +496,38 @@ $tablet: 768px;
             margin-bottom: 22px;
         }
     }
-    &__form-btn input {
+    &__form-btn {
         height: 49px;
-        width: 256px;
-        border: none;
-        box-sizing: border-box;
-        border-top-left-radius: 18px;
-        border-bottom-left-radius: 18px;
-        padding-left: 20px;
-        background-color: #E1E1E1;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #222224;
-        @include respond-to(arm) {
-            width: 200px;
+        input {
+            height: inherit;
+            width: 256px;
+            border: none;
+            box-sizing: border-box;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            padding-left: 20px;
+            background-color: #E1E1E1;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #222224;
+            float: left;
+            @include respond-to(arm) {
+                width: 200px;
+            }
         }
-    }
-    &__form-btn button {
-        height: 49px;
-        width: 100px;
-        border: none;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        background-color: #F16D7F;
-        ;
-        color: #FFFFFF;
-        ;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        button {
+            height: 49px;
+            width: 100px;
+            border: none;
+            border-top-right-radius: 18px;
+            border-bottom-right-radius: 18px;
+            background-color: #F16D7F;
+            color: #FFFFFF;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }
 
@@ -512,61 +535,62 @@ $tablet: 768px;
 /*-----------------------------------------------------*/
 
 .footer {
-    background: #222224 no-repeat;
+    background: #222224;
     padding: 24px 0;
-    @include respond-to(arm) {
+    @include respond-to(armLS) {
         padding: 0;
     }
     &__container {
         display: flex;
         justify-content: space-between;
-        @include respond-to(arm) {
+        @include respond-to(armLS) {
             min-height: 143px;
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-items: center;
+            flex-direction: column;
+            justify-content: start;
             align-items: center;
         }
     }
-}
-
-.rights {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #FBFBFB;
-    padding-top: 6px;
-    @include respond-to(tablet) {
-        margin-left: 32px;
+    .rights {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+        padding-top: 6px;
+        @include respond-to(tablet) {
+            margin-left: 32px;
+        }
+        @include respond-to(armLS) {
+            order: 2;
+            margin-left: 0;
+        }
     }
-    @include respond-to(arm) {
-        order: 2;
-        margin: 0 0 9px 0;
+    .social__icons {
+        display: flex;
+        @include respond-to(tablet) {
+            margin-right: 32px;
+        }
+        @include respond-to(armLS) {
+            order: 1;
+            margin: 43px 0 25px 0;
+        }
     }
-}
-
-.social__icons {
-    display: flex;
-    @include respond-to(tablet) {
-        margin-right: 32px;
+    .social__icons-item {
+        width: 32px;
+        height: 32px;
+        background: #FFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+        a {
+            color: #000;
+            text-decoration: none;
+        }
     }
-    @include respond-to(arm) {
-        order: 1;
-        margin: 43px 0 40px 0;
+    .social__icons-item:hover {
+        background: #ef5b70;
+        a {
+            color: #FFFFFF;
+        }
     }
-}
-
-.social__icons-item {
-    width: 32px;
-    height: 32px;
-    background: #FFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5px;
-}
-
-.social__icons-item a {
-    color: #000;
-    text-decoration: none;
 }

@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
-    <link rel="stylesheet" href="../css/style.css">
+
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/scriptCat.js"></script>
 </head>
 
 <body>
@@ -26,13 +28,13 @@
                     <nav>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="../img/menu.svg" alt="img"></a>
+                                <a href="../index.html" class="menu__link"><img src="../img/menu.svg" alt="img"></a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="../img/user.svg" alt="img"></a>
+                                <a href="regBemBootstrap.html" class="menu__link"><img src="../img/user.svg" alt="img"></a>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__link"><img src="../img/basket.svg" alt="img"></a>
+                                <a href="cart.html" class="menu__link"><img src="../img/basket.svg" alt="img"></a>
                             </li>
                         </ul>
                     </nav>
@@ -41,12 +43,12 @@
         </header>
         <section class="new">
             <div class="new__inside _container">
-                <div class="new__inside-left">NEW ARRIVALS </div>
+                <h2 class="new__inside-left">NEW ARRIVALS </h2>
                 <nav class="new__inside-right">
                     <ul class="new__breadcrumb">
-                        <li><a href="#">HOME</a></li>
+                        <li><a href="../index.html">HOME</a></li>
                         <li><a href="#">MEN</a></li>
-                        <li>NEW ARRIVALS</li>
+                        <li>Accessories</li>
                     </ul>
                 </nav>
             </div>
@@ -54,12 +56,14 @@
         <aside class="filter _container">
             <div class="filter__left">
                 <p class="filter__title">FILTER</p>
-                <img src="../img/filter.svg" alt="">
+                <img class="filter__icon" src="../img/filter.svg" alt="">
                 <div class="filter__category _padblock">
                     <nav class="filter__category-item">
                         <div class="filter__category-title">CATEGORY</div>
                         <div class="_padblock">
-                            <a href="#">Accessories</a>
+
+                            <a href="product.html">Accessor
+                         
                             <a href="#">Bags</a>
                             <a href="#">Denim</a>
                             <a href="#">Hoodies & Sweatshirts</a>
@@ -111,11 +115,19 @@
                     <div class="filter__trending-title">TRENDING NOW
                         <img src="../img/filterRight.svg" alt="">
                     </div>
-                    <div class="filter__trending-item _padblock">
-                        <input type="checkbox"> Hoodies Under Blazers
-                        <input type="checkbox"> Color Clashing
-                        <input type="checkbox"> Academia
-                        <input type="checkbox"> Y2K Fashion
+                    <div class="filter__trending-item _padblock item__style">
+                        <div>
+                            <input type="checkbox"> Hoodies
+                        </div>
+                        <div>
+                            <input type="checkbox"> Clashing
+                        </div>
+                        <div>
+                            <input type="checkbox"> Academia
+                        </div>
+                        <div>
+                            <input type="checkbox"> Y2K Fashion
+                        </div>
                     </div>
                 </div>
                 <div class="filter__size">
@@ -123,11 +135,11 @@
                         SIZE
                         <img src="../img/filterRight.svg" alt="">
                     </div>
-                    <div class="filter__size-item _padblock">
-                        <input type="checkbox"> XS
-                        <input type="checkbox"> S
-                        <input type="checkbox"> M
-                        <input type="checkbox"> L
+                    <div class="filter__size-item _padblock item__style">
+                        <div><input type="checkbox"> XS</div>
+                        <div><input type="checkbox"> S</div>
+                        <div><input type="checkbox"> M</div>
+                        <div><input type="checkbox"> L</div>
                     </div>
                 </div>
                 <div class="filter__price">
@@ -135,20 +147,26 @@
                         PRICE
                         <img src="../img/filterRight.svg" alt="">
                     </div>
-                    <div class="filter__price-item _padblock">
-                        <input type="checkbox"> 200 - 500
-                        <input type="checkbox"> 501 - 1500
-                        <input type="checkbox"> 1501 - 5000
-                        <input type="checkbox"> > 5000
+                    <div class="filter__price-item _padblock item__style">
+                        <div> <input type="checkbox"> 200 - 500</div>
+                        <div><input type="checkbox"> 501 - 1500</div>
+                        <div><input type="checkbox"> 1501 - 5000</div>
+                        <div><input type="checkbox"> > 5000</div>
                     </div>
                 </div>
             </div>
         </aside>
         <div class="fetured _container">
-
             <div class="fetured__item">
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured1.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured1.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -156,7 +174,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured7.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured7.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -164,7 +189,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured3.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured3.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -172,7 +204,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured4.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured4.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -180,7 +219,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured8.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured8.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -188,7 +234,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured9.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured9.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -196,7 +249,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured10.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured10.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -204,7 +264,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured11.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured11.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -212,7 +279,14 @@
                     </div>
                 </div>
                 <div class="fetured__item-box">
-                    <img class="fetured__item-img" src="../img/fetured12.jpg" alt="">
+                    <div class="fetured__item-imageNorm">
+                        <img class="fetured__item-img" src="../img/fetured12.jpg" alt="">
+                        <div class="fetured__item-imageHover">
+                            <button>
+												<img src="../img/add.svg" alt="">Add to Cart
+											</button>
+                        </div>
+                    </div>
                     <div class="fetured__item-text">
                         <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
                         <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -268,8 +342,8 @@
                     <form action="#" class="subscribe__form-btn">
                         <input type="text" placeholder="Enter Your Email">
                         <button>Subscribe</button>
+                    </form>
                 </div>
-                </form>
             </div>
         </div>
         <footer class="footer">
