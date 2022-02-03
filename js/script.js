@@ -9,7 +9,5 @@ function toggleMenu() {
     brandOutside.classList.toggle('_padblock');
 }
 
-
-
 catalog.addEventListener('click', toggleMenu);
 exit.addEventListener('click', toggleMenu);
