@@ -1,8 +1,14 @@
 @charset "UTF-8";
-/*-----Подключения-------*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&family=Playfair+Display:regular,700,700italic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-----Подключения-------*/
 .b-label {
   height: 70px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,10 +143,55 @@
   padding-top: 50px;
 }
 
+.b-collection-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-collection__info {
+  width: 445px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.b-collection__label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.b-collection__title {
+  font-family: Playfair Display;
+  font-size: 36px;
+  line-height: 54px;
+  color: #282828;
+}
+
+.b-collection__line {
+  width: 160px;
+  border: 1px solid #282828;
+}
+
+.b-collection__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #282828;
+}
+
 /*------Переменные-------*/
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -150,16 +201,12 @@ body {
   max-width: 1920px;
 }
 
-.b_container {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
 .b-header {
   height: 900px;
-  min-width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .b-header__button {
@@ -167,6 +214,11 @@ body {
   height: 50px;
   padding-top: 583px;
   padding-left: 347px;
+}
+
+.b_container {
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .b-main__publicity {
