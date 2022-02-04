@@ -3,6 +3,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*-----Подключения-------*/
@@ -143,13 +145,25 @@
   padding-top: 50px;
 }
 
-.b-collection-flex {
+.b-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.b-collection__item {
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 1px solid #998431;
+  border-bottom: 1px solid #998431;
 }
 
 .b-collection__info {
@@ -170,13 +184,18 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  padding-top: 60px;
 }
 
 .b-collection__title {
-  font-family: Playfair Display;
+  width: 298px;
+  font-family: "Playfair Display";
+  font-weight: bold;
   font-size: 36px;
   line-height: 54px;
   color: #282828;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .b-collection__line {
@@ -188,6 +207,77 @@
   font-size: 14px;
   line-height: 21px;
   color: #282828;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.b-collection__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.b-collection__table .table__text {
+  border-bottom: 1px solid #282828;
+  padding-left: 30px;
+}
+
+.b-collection__table .table__title {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #282828;
+  padding-left: 30px;
+  vertical-align: bottom;
+}
+
+.b-collection__table .table__year {
+  font-size: 14px;
+  line-height: 21px;
+  color: #282828;
+  border-right: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  padding: 31px 24px;
+}
+
+.b-collection__table .table__year-end,
+.b-collection__table .table__text-end {
+  border-bottom: none;
+}
+
+.b-collection__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 254px;
+  height: 50px;
+  background: #998431;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.b-collection__image {
+  padding-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.b-collection__image-top {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
 }
 
 /*------Переменные-------*/
@@ -224,4 +314,9 @@ body {
 .b-main__publicity {
   height: 856px;
   background: #282828;
+}
+
+.b-main-collection {
+  height: 1038px;
+  background: #E6E3C4;
 }

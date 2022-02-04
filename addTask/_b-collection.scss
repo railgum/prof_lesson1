@@ -1,0 +1,99 @@
+.b-collection {
+  display: flex;
+  align-items: center;
+  &__item {
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #998431;
+    border-bottom: 1px solid #998431;
+    //margin-top: 80px !important;
+  }
+  &__border {}
+  &__info {
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  &__label {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-top: 60px;
+  }
+  &__title {
+    width: 298px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #282828;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__line {
+    width: 160px;
+    border: 1px solid #282828;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #282828;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    .table__text {
+      border-bottom: 1px solid #282828;
+      //padding-bottom: 15px;
+      padding-left: 30px;
+    }
+    .table__title {
+      font-family: "Playfair Display";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 27px;
+      color: #282828;
+      //padding-bottom: 5px;
+      padding-left: 30px;
+      vertical-align: bottom;
+    }
+    .table__year {
+      font-size: 14px;
+      line-height: 21px;
+      color: #282828;
+      border-right: 1px solid #282828;
+      border-bottom: 1px solid #282828;
+      padding: 31px 24px;
+    }
+    .table__year-end,
+    .table__text-end {
+      border-bottom: none;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 254px;
+    height: 50px;
+    background: $buttonBGR;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  &__image {
+    padding-top: 60px;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1fr 1fr;
+    &-top {
+      grid-column: 1/3;
+    }
+  }
+}
