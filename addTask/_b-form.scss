@@ -1,91 +1,91 @@
 .b-form {
+  &__content {
     position: relative;
-    &__content {
-        height: 538px;
-        width: 1110px;
-        display: flex;
-        flex-direction: column;
-        //text-align: center;
-        align-items: center;
-        border: 3px solid #C4C4C4;
-    }
-    &__title {
-        font-family: "Playfair Display";
-        font-size: 36px;
-        line-height: 54px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 0 50px;
-    }
-    &__item {
-        width: 540px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        //flex-wrap: wrap;
-        padding-top: 40px;
-    }
-    &__line {
-        width: 118px;
-        outline: 1px solid #FFFFFF;
-    }
-    &__text {
-        line-height: 24px;
-        text-align: center;
-        color: #FFFFFF;
-        padding-top: 40px;
-        padding-bottom: 80px;
-    }
-    &__user {
-        width: 100%;
-        height: 30px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-    }
-    &__name,
-    &__phone {
-        width: 255px;
-        border-bottom: 1px solid #FFFFFF;
-        background: $mainBGR;
-    }
-    &__name::placeholder,
-    &__phone::placeholder,
-    &__place::placeholder {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 19px;
-        color: #FFFFFF;
-    }
-    &__place {
-        width: 100%;
-        height: 30px;
-        border-bottom: 1px solid #FFFFFF;
-        background: $mainBGR;
-        margin-bottom: 40px;
-    }
-    &__btn {
-        width: 100%;
-        height: 50px;
-        line-height: 20px;
-        text-align: center;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        background: $mainBGR;
-        border: 1px solid #FFFFFF;
-        box-sizing: border-box;
-        //padding-top: 50px;
-    }
-    &__image-left {
-        position: absolute;
-        top: 60px;
-        left: 375px;
-    }
-    &__image-right {
-        position: absolute;
-        top: 64px;
-        right: 352px;
-    }
+    height: 538px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    //text-align: center;
+    align-items: center;
+    border: 3px solid #C4C4C4;
+  }
+  &__title {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 50px;
+  }
+  &__item {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  &__line {
+    width: 118px;
+    outline: 1px solid #FFFFFF;
+  }
+  &__text {
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  &__user {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__name,
+  &__phone {
+    width: 255px;
+    border-bottom: 1px solid #FFFFFF;
+    background: $mainBGR;
+  }
+  &__name::placeholder,
+  &__phone::placeholder,
+  &__place::placeholder {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+  &__place {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #FFFFFF;
+    background: $mainBGR;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    width: 100%;
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: $mainBGR;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    //padding-top: 50px;
+  }
+  &__image-left {
+    position: absolute;
+    top: -130px;
+    left: -40px;
+  }
+  &__image-right {
+    position: absolute;
+    top: -80px;
+    right: -55px;
+  }
 }

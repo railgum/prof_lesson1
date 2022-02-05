@@ -1,4 +1,7 @@
 .b-footer {
+  &__item {
+    max-width: 100%;
+  }
   &__menu {
     width: 100%;
     height: 60px;
@@ -13,7 +16,7 @@
   }
   &__menu-item {}
   &__label {
-    height: 60px;
+    //height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -26,30 +29,47 @@
   }
   &__label {
     justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #fff;
   }
   &__nameCompany {
+    height: 100%;
     width: 350px;
+    border-right: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__phone {
+    height: 100%;
     width: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #FFFFFF;
   }
   &__social {
+    height: 100%;
     width: 260px;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-  }
-  &__item {
-    width: 25px;
-    height: 25px;
-    background: #fff;
+    border-right: 1px solid #FFFFFF;
     a {
+      width: 25px;
+      height: 25px;
+      background: #fff;
       color: $footerBGR;
       text-decoration: none;
       z-index: 5;
     }
   }
   &__site {
+    height: 100%;
     width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
