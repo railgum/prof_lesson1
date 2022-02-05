@@ -24,7 +24,7 @@ body {
 }
 
 .b-wrapper {
-  max-width: 1920px;
+  min-width: 1920px;
 }
 
 .b_container {
@@ -40,15 +40,21 @@ body {
   background-repeat: no-repeat;
 }
 
+.b-header__flex {}
+
 .b-main__publicity {
   height: 856px;
   background: $mainBGR;
 }
 
+.b-publicity__flex {}
+
 .b-main__collection {
   height: 1038px;
   background: $collectionBGR;
 }
+
+.b-collectoin__flex {}
 
 .b-main__form {
   height: 767px;

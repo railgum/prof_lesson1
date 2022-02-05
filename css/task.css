@@ -10,7 +10,6 @@
 /*-----Подключения-------*/
 .b-header__item {
   position: relative;
-  max-width: 100%;
 }
 
 .b-header__label {
@@ -107,7 +106,7 @@
 }
 
 .b-publicity__item {
-  max-width: 100%;
+  width: 100%;
   height: 656px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,7 +554,7 @@ body {
 }
 
 .b-wrapper {
-  max-width: 1920px;
+  min-width: 1920px;
 }
 
 .b_container {
