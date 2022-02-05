@@ -1,0 +1,53 @@
+.b-footer {
+    &__flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    &__menu-item {}
+    &__label {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: auto;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    &__nameCompany {
+        width: 350px;
+    }
+    &__phone {
+        width: 235px;
+    }
+    &__social {
+        width: 260px;
+    }
+    &__item {}
+    &__site {
+        width: 265px;
+    }
+}
+
+.fa {}
+
+.fa-youtube-play {}
+
+.fa-vk {}
+
+.fa-facebook {}
