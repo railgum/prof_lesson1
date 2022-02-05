@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -19,41 +19,47 @@
 /*------Переменные-------*/
 
 body {
-  //box-sizing: border-box;
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
+    //box-sizing: border-box;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
 }
 
 .b-wrapper {
-  max-width: 1920px;
+    max-width: 1920px;
 }
 
 .b-header {
-  height: 900px;
-  //min-width: 100%;
-  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
-  background-size: cover;
-  background-repeat: no-repeat;
-  &__button {
-    width: 415px;
-    height: 50px;
-    padding-top: 583px;
-    padding-left: 347px;
-  }
+    height: 900px;
+    //min-width: 100%;
+    background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__button {
+        width: 415px;
+        height: 50px;
+        padding-top: 583px;
+        padding-left: 347px;
+    }
 }
 
 .b_container {
-  width: 1110px;
-  margin: 0 auto;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .b-main__publicity {
-  height: 856px;
-  background: $mainBGR;
+    height: 856px;
+    background: $mainBGR;
 }
 
-.b-main-collection {
-  height: 1038px;
-  background: $collectionBGR;
+.b-main__collection {
+    height: 1038px;
+    background: $collectionBGR;
+}
+
+.b-main__form {
+    height: 767px;
+    background: $mainBGR;
+    padding-top: 130px;
 }
