@@ -1,11 +1,11 @@
 .b-header__item {
   position: relative;
-  //width: 100%;
+  width: 100%;
 }
 
 .b-header__label {
   height: 70px;
-  max-width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
