@@ -97,39 +97,6 @@
   background: #998431;
 }
 
-.b-buttonDouble {
-  width: 415px;
-  height: 50px;
-  position: absolute;
-  left: 347px;
-  top: 700px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.b-buttonDouble__vineList, .b-buttonDouble__tasting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 182px;
-  line-height: 20px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #998431;
-}
-
 .b-publicity {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -10,7 +10,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&family=Playfair+Display:regular,700,700italic&display=swap");
 @import "_general";
 @import "_b-header";
-@import "_b-buttonDouble";
 @import "_b-publicity";
 @import "_b-collection";
 @import "_b-form";
@@ -40,8 +39,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.b-header__item {}
 
 .b-main__publicity {
   height: 856px;
