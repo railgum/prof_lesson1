@@ -8,6 +8,9 @@
     //text-align: center;
     align-items: center;
     border: 3px solid #C4C4C4;
+    @media (min-width: 320px) {
+      position: static;
+    }
   }
   &__title {
     font-family: "Playfair Display";
@@ -82,10 +85,18 @@
     position: absolute;
     top: -130px;
     left: -40px;
+    @media (min-width: 320px) {
+      position: static;
+      display: none;
+    }
   }
   &__image-right {
     position: absolute;
     top: -80px;
     right: -55px;
+    @media (min-width: 320px) {
+      position: static;
+      display: none;
+    }
   }
 }

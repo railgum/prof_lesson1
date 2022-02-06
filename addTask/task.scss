@@ -30,6 +30,9 @@ body {
 .b_container {
   width: 1110px;
   margin: 0 auto;
+  @media (min-width: 320px) {
+    width: 300px;
+  }
 }
 
 .b-header {
@@ -38,23 +41,23 @@ body {
   background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (min-width: 320px) {
+    height: 400px;
+  }
 }
-
-.b-header__flex {}
 
 .b-main__publicity {
   height: 856px;
   background: $mainBGR;
+  @media (min-width: 320px) {
+    display: none;
+  }
 }
-
-.b-publicity__flex {}
 
 .b-main__collection {
   height: 1038px;
   background: $collectionBGR;
 }
-
-.b-collectoin__flex {}
 
 .b-main__form {
   height: 767px;
