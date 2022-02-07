@@ -30,26 +30,32 @@ body {
 .b_container {
   width: 1110px;
   margin: 0 auto;
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     width: 300px;
+  }
+  @media (max-width: 768px) {
+    width: 740px;
   }
 }
 
 .b-header {
   height: 900px;
-  //min-width: 100%;
+  //max-width: 100%;
   background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background-size: cover;
   background-repeat: no-repeat;
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     height: 400px;
+  }
+  @media (max-width: 768px) {
+    height: 600px;
   }
 }
 
 .b-main__publicity {
   height: 856px;
   background: $mainBGR;
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     display: none;
   }
 }
@@ -57,7 +63,7 @@ body {
 .b-main__collection {
   height: 1038px;
   background: $collectionBGR;
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     height: 1288px;
   }
 }
@@ -66,7 +72,7 @@ body {
   height: 767px;
   background: $mainBGR;
   padding-top: 130px;
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     padding-top: 60px;
     height: 605px;
   }
@@ -75,7 +81,7 @@ body {
 .b-footer {
   height: 220px;
   background: $footerBGR;
-  @media (min-width: 320px) {
+  @media (max-width: 320px) {
     height: 400px;
   }
 }
