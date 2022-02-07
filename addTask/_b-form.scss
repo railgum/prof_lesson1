@@ -8,10 +8,6 @@
     //text-align: center;
     align-items: center;
     border: 3px solid #C4C4C4;
-    @media (max-width: 320px) {
-      position: static;
-      border: none;
-    }
   }
   &__title {
     font-family: "Playfair Display";
@@ -20,11 +16,6 @@
     text-align: center;
     color: #FFFFFF;
     padding: 0 50px;
-    @media (max-width: 320px) {
-      width: 300px;
-      font-style: 20px;
-      line-height: 40px;
-    }
   }
   &__item {
     width: 540px;
@@ -34,10 +25,6 @@
     align-items: center;
     //flex-wrap: wrap;
     padding-top: 40px;
-    @media (max-width: 320px) {
-      width: 300px;
-      margin: 0 auto;
-    }
   }
   &__line {
     width: 118px;
@@ -49,10 +36,6 @@
     color: #FFFFFF;
     padding-top: 40px;
     padding-bottom: 80px;
-    @media (max-width: 320px) {
-      font-size: 12px;
-      line-height: 18px;
-    }
   }
   &__user {
     width: 100%;
@@ -60,22 +43,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    @media (max-width: 320px) {
-      flex-direction: column;
-      align-items: center;
-      height: initial;
-      margin-bottom: 0;
-    }
   }
   &__name,
   &__phone {
     width: 255px;
     border-bottom: 1px solid #FFFFFF;
     background: $mainBGR;
-    @media (max-width: 320px) {
-      height: 30px;
-      padding-left: 15px;
-    }
   }
   &__name::placeholder,
   &__phone::placeholder,
@@ -91,10 +64,7 @@
     border-bottom: 1px solid #FFFFFF;
     background: $mainBGR;
     margin-bottom: 40px;
-    @media (max-width: 320px) {
-      width: 255px;
-      padding-left: 15px;
-    }
+    adding-left: 15px;
   }
   &__btn {
     width: 100%;
@@ -112,18 +82,10 @@
     position: absolute;
     top: -130px;
     left: -40px;
-    @media (max-width: 320px) {
-      position: static;
-      display: none;
-    }
   }
   &__image-right {
     position: absolute;
     top: -80px;
     right: -55px;
-    @media (max-width: 320px) {
-      position: static;
-      display: none;
-    }
   }
 }
