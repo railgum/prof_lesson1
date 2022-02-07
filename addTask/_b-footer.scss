@@ -54,17 +54,18 @@
     justify-content: space-evenly;
     border-right: 1px solid #FFFFFF;
     a {
-      width: 25px;
+      //width: 25px;
       height: 25px;
-      background: #fff;
-      color: $footerBGR;
+      background: $footerBGR;
+      color: #fff;
       text-decoration: none;
-      z-index: 5;
+      //z-index: 5;
     }
   }
   &__site {
     height: 100%;
     width: 265px;
+    line-height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;

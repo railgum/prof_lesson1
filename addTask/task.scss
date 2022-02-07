@@ -30,6 +30,9 @@ body {
 .b_container {
   width: 1110px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    width: 700px;
+  }
 }
 
 .b-header {
@@ -38,12 +41,6 @@ body {
   background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background-size: cover;
   background-repeat: no-repeat;
-  @media (max-width: 320px) {
-    height: 400px;
-  }
-  @media (max-width: 768px) {
-    height: 600px;
-  }
 }
 
 .b-main__publicity {

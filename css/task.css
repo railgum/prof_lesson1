@@ -30,6 +30,12 @@
   color: #FFFFFF;
 }
 
+@media (max-width: 768px) {
+  .b-label {
+    display: block;
+  }
+}
+
 .b-menu {
   height: 47px;
   display: -webkit-box;
@@ -400,7 +406,7 @@
   border-bottom: 1px solid #FFFFFF;
   background: #282828;
   margin-bottom: 40px;
-  adding-left: 15px;
+  padding-left: 15px;
 }
 
 .b-form__btn {
@@ -522,17 +528,16 @@
 }
 
 .b-footer__social a {
-  width: 25px;
   height: 25px;
-  background: #fff;
-  color: #998431;
+  background: #998431;
+  color: #fff;
   text-decoration: none;
-  z-index: 5;
 }
 
 .b-footer__site {
   height: 100%;
   width: 265px;
+  line-height: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,24 +565,18 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .b_container {
+    width: 700px;
+  }
+}
+
 .b-header {
   height: 900px;
   background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-@media (max-width: 320px) {
-  .b-header {
-    height: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .b-header {
-    height: 600px;
-  }
 }
 
 .b-main__publicity {

@@ -12,6 +12,9 @@
   font-size: 13px;
   line-height: 19.5px;
   color: #FFFFFF;
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .b-menu {
