@@ -560,18 +560,6 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 320px) {
-  .b_container {
-    width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .b_container {
-    width: 740px;
-  }
-}
-
 .b-header {
   height: 900px;
   background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url(../addTask/image/headerBGR.jpg), #EDEDED;
