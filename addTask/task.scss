@@ -57,17 +57,27 @@ body {
 .b-main__collection {
   height: 1038px;
   background: $collectionBGR;
+  @media (min-width: 320px) {
+    height: 1288px;
+  }
 }
 
 .b-main__form {
   height: 767px;
   background: $mainBGR;
   padding-top: 130px;
+  @media (min-width: 320px) {
+    padding-top: 60px;
+    height: 605px;
+  }
 }
 
 .b-footer {
   height: 220px;
   background: $footerBGR;
+  @media (min-width: 320px) {
+    height: 400px;
+  }
 }
 
 .b-footer__flex {

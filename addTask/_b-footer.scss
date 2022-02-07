@@ -13,23 +13,39 @@
     color: #FFFFFF;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    @media (min-width: 320px) {
+      flex-direction: column;
+      border-top: none;
+      height: 210px;
+    }
+    &-item {
+      @media (min-width: 320px) {
+        height: 40px;
+        width: 100%;
+        border: 1px solid #fff;
+        padding-left: 15px;
+      }
+    }
   }
   &__label {
-    //height: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    //justify-content: space-around;
     align-items: center;
     flex-basis: auto;
     font-size: 14px;
     line-height: 21px;
+    text-transform: uppercase;
     color: #FFFFFF;
     text-align: center;
-  }
-  &__label {
     justify-content: center;
     height: 60px;
     border-bottom: 1px solid #fff;
+    @media (min-width: 320px) {
+      flex-direction: column;
+      height: 100px;
+      padding-top: 15px;
+    }
   }
   &__nameCompany {
     height: 100%;
@@ -38,6 +54,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (min-width: 320px) {
+      height: 40px;
+    }
   }
   &__phone {
     height: 100%;
@@ -46,6 +65,10 @@
     align-items: center;
     justify-content: center;
     border-right: 1px solid #FFFFFF;
+    @media (min-width: 320px) {
+      height: 40px;
+      border-right: none;
+    }
   }
   &__social {
     height: 100%;
@@ -54,6 +77,9 @@
     align-items: center;
     justify-content: space-evenly;
     border-right: 1px solid #FFFFFF;
+    @media (min-width: 320px) {
+      border-right: none;
+    }
     a {
       width: 25px;
       height: 25px;
