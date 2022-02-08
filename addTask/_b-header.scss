@@ -1,6 +1,11 @@
 .b-header__item {
   position: relative;
   width: 100%;
+  @media (max-width: 768px) {
+    position: static;
+    width: auto;
+    padding-bottom: 15px;
+  }
 }
 
 .b-label {
@@ -13,7 +18,10 @@
   line-height: 19.5px;
   color: #FFFFFF;
   @media (max-width: 768px) {
-    display: block;
+    width: auto;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -24,17 +32,34 @@
   font-size: 14px;
   line-height: 21px;
   color: #FFFFFF;
+  @media (max-width: 768px) {
+    flex-flow: column wrap;
+    width: auto;
+    height: auto;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 35px;
+  }
   &__item {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #FFFFFF;
+    @media (max-width: 768px) {
+      height: 45px;
+    }
     &:last-child {
       border-right: none;
+      @media (max-width: 768px) {
+        border-right: 1px solid #fff;
+      }
     }
     &:first-child {
       border-left: none;
+      @media (max-width: 768px) {
+        border-left: 1px solid #fff;
+      }
     }
   }
 }
@@ -47,6 +72,10 @@
   top: 700px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    position: static;
+    width: auto;
+  }
   &__vineList,
   &__tasting {
     display: flex;

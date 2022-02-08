@@ -31,7 +31,7 @@ body {
   width: 1110px;
   margin: 0 auto;
   @media (max-width: 768px) {
-    width: 700px;
+    width: auto;
   }
 }
 
@@ -41,27 +41,43 @@ body {
   background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .b-main__publicity {
   height: 856px;
   background: $mainBGR;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .b-main__collection {
   height: 1038px;
   background: $collectionBGR;
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .b-main__form {
   height: 767px;
   background: $mainBGR;
   padding-top: 130px;
+  @media (max-width: 768px) {
+    height: auto;
+    padding-top: 60px;
+  }
 }
 
 .b-footer {
   height: 220px;
   background: $footerBGR;
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .b-footer__flex {
