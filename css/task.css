@@ -37,6 +37,7 @@
   line-height: 19.5px;
   color: #FFFFFF;
   padding-top: 12px;
+  letter-spacing: -0.5px;
 }
 
 @media (max-width: 768px) {
