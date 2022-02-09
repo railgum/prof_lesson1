@@ -86,4 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  @media (max-width: 480px) {
+    padding-top: 15px;
+  }
 }

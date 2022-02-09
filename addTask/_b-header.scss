@@ -1,6 +1,6 @@
 .b-header__item {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   @media (max-width: 768px) {
     position: static;
     width: auto;
@@ -10,7 +10,7 @@
 
 .b-label {
   height: 70px;
-  min-width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,6 +47,7 @@
     align-items: center;
     border: 1px solid #FFFFFF;
     @media (max-width: 768px) {
+      width: auto;
       height: 45px;
     }
     &:last-child {
@@ -75,6 +76,9 @@
   @media (max-width: 768px) {
     position: static;
     width: auto;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
   &__vineList,
   &__tasting {
