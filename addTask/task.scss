@@ -65,7 +65,7 @@ body {
 .b-main__form {
   height: 767px;
   background: $mainBGR;
-  padding-top: 130px;
+  padding-top: 104px;
   @media (max-width: 768px) {
     height: auto;
     padding-top: 60px;
@@ -77,16 +77,5 @@ body {
   background: $footerBGR;
   @media (max-width: 768px) {
     height: auto;
-  }
-}
-
-.b-footer__flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  @media (max-width: 480px) {
-    padding-top: 15px;
   }
 }

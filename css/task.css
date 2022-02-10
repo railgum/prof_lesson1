@@ -89,6 +89,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  letter-spacing: 0.1px;
   border: 1px solid #FFFFFF;
 }
 
@@ -117,6 +118,14 @@
   .b-menu__item:first-child {
     border-left: 1px solid #fff;
   }
+}
+
+.b-menu__item:nth-child(2) {
+  padding-right: 28px;
+}
+
+.b-menu__item:nth-child(3) {
+  padding-right: 18px;
 }
 
 .b-buttonDouble {
@@ -165,6 +174,10 @@
   background: #998431;
 }
 
+.b-buttonDouble__vineList {
+  width: 203px;
+}
+
 .b-publicity {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,6 +216,7 @@
   color: #FFFFFF;
   padding-top: 60px;
   padding-bottom: 40px;
+  letter-spacing: 1.97px;
 }
 
 .b-publicity__line {
@@ -216,7 +230,7 @@
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
-  padding-top: 40px;
+  padding-top: 33px;
 }
 
 .b-publicity__image {
@@ -234,7 +248,7 @@
 
 .b-collection__item {
   max-width: 100%;
-  height: 900px;
+  height: 880px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,6 +302,7 @@
   line-height: 24px;
   color: #000000;
   padding-top: 60px;
+  letter-spacing: -0.4px;
 }
 
 @media (max-width: 768px) {
@@ -305,6 +320,7 @@
   color: #282828;
   padding-top: 30px;
   padding-bottom: 30px;
+  letter-spacing: 1.1px;
 }
 
 .b-collection__line {
@@ -347,16 +363,17 @@
 
 .b-collection__table .table__text {
   border-bottom: 1px solid #282828;
-  padding-left: 30px;
+  padding-left: 27px;
+  letter-spacing: -1.5px;
 }
 
 .b-collection__table .table__title {
   font-family: "Playfair Display";
   font-weight: bold;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 6px;
   color: #282828;
-  padding-left: 30px;
+  padding-left: 27px;
   vertical-align: bottom;
 }
 
@@ -366,7 +383,7 @@
   color: #282828;
   border-right: 1px solid #282828;
   border-bottom: 1px solid #282828;
-  padding: 31px 24px;
+  padding: 25px 19px;
 }
 
 .b-collection__table .table__year-end,
@@ -387,7 +404,7 @@
   width: 254px;
   height: 50px;
   background: #998431;
-  line-height: 20px;
+  line-height: 19px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -398,7 +415,7 @@
   padding-top: 60px;
   display: -ms-grid;
   display: grid;
-  gap: 30px;
+  gap: 27px;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
 }
@@ -435,7 +452,7 @@
 
 .b-form__content {
   position: relative;
-  height: 538px;
+  height: 563px;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,6 +481,7 @@
   text-align: center;
   color: #FFFFFF;
   padding: 0 50px;
+  letter-spacing: 2.2px;
 }
 
 @media (max-width: 480px) {
@@ -489,7 +507,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 40px;
+  padding-top: 36px;
 }
 
 @media (max-width: 480px) {
@@ -515,7 +533,7 @@
   text-align: center;
   color: #FFFFFF;
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 76px;
 }
 
 .b-form__user {
@@ -588,8 +606,7 @@
   height: 30px;
   border-bottom: 1px solid #FFFFFF;
   background: #282828;
-  margin-bottom: 40px;
-  padding-left: 15px;
+  margin-bottom: 55px;
 }
 
 @media (max-width: 480px) {
@@ -603,13 +620,14 @@
   height: 50px;
   line-height: 20px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #FFFFFF;
   background: #282828;
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-top: 3px;
 }
 
 @media (max-width: 480px) {
@@ -620,8 +638,8 @@
 
 .b-form__image-left {
   position: absolute;
-  top: -130px;
-  left: -40px;
+  top: -99px;
+  left: -35px;
 }
 
 @media (max-width: 768px) {
@@ -632,13 +650,36 @@
 
 .b-form__image-right {
   position: absolute;
-  top: -80px;
+  top: -93px;
   right: -55px;
 }
 
 @media (max-width: 768px) {
   .b-form__image-right {
     display: none;
+  }
+}
+
+.b-footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 52px;
+}
+
+@media (max-width: 480px) {
+  .b-footer__flex {
+    padding-top: 15px;
   }
 }
 
@@ -664,8 +705,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -697,6 +739,14 @@
     padding: 0 15px;
     text-align: center;
   }
+}
+
+.b-footer__menu-item:first-child {
+  padding-left: 32px;
+}
+
+.b-footer__menu-item:last-child {
+  padding-right: 30px;
 }
 
 @media (max-width: 768px) {
@@ -767,6 +817,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 41px;
 }
 
 .b-footer__phone {
@@ -793,9 +844,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-right: 1px solid #FFFFFF;
 }
 
@@ -819,6 +870,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 36px;
+}
+
+.fa-vk {
+  padding: 0 39px;
+  font-size: 1.3em;
+  padding-top: 2px;
 }
 
 /*------блоки-------*/
@@ -882,7 +940,7 @@ body {
 .b-main__form {
   height: 767px;
   background: #282828;
-  padding-top: 130px;
+  padding-top: 104px;
 }
 
 @media (max-width: 768px) {
@@ -900,28 +958,5 @@ body {
 @media (max-width: 768px) {
   .b-footer {
     height: auto;
-  }
-}
-
-.b-footer__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 50px;
-}
-
-@media (max-width: 480px) {
-  .b-footer__flex {
-    padding-top: 15px;
   }
 }

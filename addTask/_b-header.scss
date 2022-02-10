@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.1px;
     border: 1px solid #FFFFFF;
     @media (max-width: 768px) {
       width: auto;
@@ -63,6 +64,12 @@
       @media (max-width: 768px) {
         border-left: 1px solid #fff;
       }
+    }
+    &:nth-child(2) {
+      padding-right: 28px;
+    }
+    &:nth-child(3) {
+      padding-right: 18px;
     }
   }
 }
@@ -94,5 +101,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
     background: $buttonBGR;
+  }
+  &__vineList {
+    width: 203px;
   }
 }

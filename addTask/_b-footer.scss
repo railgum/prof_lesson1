@@ -1,4 +1,14 @@
 .b-footer {
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 52px;
+    @media (max-width: 480px) {
+      padding-top: 15px;
+    }
+  }
   &__item {
     max-width: 100%;
     @media (max-width: 768px) {
@@ -12,7 +22,7 @@
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 14px;
     line-height: 21px;
@@ -32,6 +42,12 @@
     }
   }
   &__menu-item {
+    &:first-child {
+      padding-left: 32px;
+    }
+    &:last-child {
+      padding-right: 30px;
+    }
     @media (max-width: 768px) {
       border: 1px solid #fff;
       width: 30%;
@@ -72,6 +88,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 41px;
   }
   &__phone {
     height: 100%;
@@ -86,7 +103,7 @@
     width: 260px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     border-right: 1px solid #FFFFFF;
     a {
       height: 25px;
@@ -102,5 +119,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 36px;
   }
+}
+
+.fa-vk {
+  padding: 0 39px;
+  font-size: 1.3em;
+  padding-top: 2px;
 }
