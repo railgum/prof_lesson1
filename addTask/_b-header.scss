@@ -1,17 +1,30 @@
 .b-header__item {
   position: relative;
-  //width: 100%;
+  max-width: 100%;
+  @media (max-width: 768px) {
+    position: static;
+    width: auto;
+    padding-bottom: 15px;
+  }
 }
 
-.b-header__label {
+.b-label {
   height: 70px;
-  max-width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 13px;
   line-height: 19.5px;
   color: #FFFFFF;
+  padding-top: 12px;
+  letter-spacing: -0.5px;
+  @media (max-width: 768px) {
+    width: auto;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .b-menu {
@@ -21,17 +34,42 @@
   font-size: 14px;
   line-height: 21px;
   color: #FFFFFF;
+  @media (max-width: 768px) {
+    flex-flow: column wrap;
+    width: auto;
+    height: auto;
+    padding-bottom: 15px;
+    font-size: 20px;
+    line-height: 35px;
+  }
   &__item {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.1px;
     border: 1px solid #FFFFFF;
+    @media (max-width: 768px) {
+      width: auto;
+      height: 45px;
+    }
     &:last-child {
       border-right: none;
+      @media (max-width: 768px) {
+        border-right: 1px solid #fff;
+      }
     }
     &:first-child {
       border-left: none;
+      @media (max-width: 768px) {
+        border-left: 1px solid #fff;
+      }
+    }
+    &:nth-child(2) {
+      padding-right: 28px;
+    }
+    &:nth-child(3) {
+      padding-right: 18px;
     }
   }
 }
@@ -44,6 +82,13 @@
   top: 700px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    position: static;
+    width: auto;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
   &__vineList,
   &__tasting {
     display: flex;
@@ -56,5 +101,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
     background: $buttonBGR;
+  }
+  &__vineList {
+    width: 203px;
   }
 }
